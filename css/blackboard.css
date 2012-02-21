@@ -70,17 +70,19 @@ ul#application_menu > li a:visited { height: 32px; text-decoration: none; vertic
 
 ul#application_menu > li.login_button { background: #a39d95; padding-left: 20px; position: relative; width: 130px; }
 ul#application_menu > li.login_button a,
-ul#application_menu > li.login_button a:visited { color: inherit; font-size: 21px; text-transform: uppercase; }
+ul#application_menu > li.login_button a:visited { color: inherit; font-size: 21px; font-weight: 300; text-transform: uppercase; }
 ul#application_menu > li.login_button a:before { background-image: url('../images/login-arrows.png'); content: ""; height: 32px; left: -32px; position: absolute; top: 0; width: 32px; }
 ul#application_menu > li.login_button a:active,
 ul#application_menu > li.login_button a:focus { outline: none; }
 ul#application_menu > li.login_button a:active:before,
 ul#application_menu > li.login_button a:focus:before,
+ul#application_menu > li.login_button a:hover { font-weight: 400; }
 ul#application_menu > li.login_button a:hover:before { width: 46px; }
 
-ul#application_menu > li.request_course { background: #d6d3cf; padding: 0 5px; width: 140px; }
+ul#application_menu > li.request_course { background: #d6d3cf; border: 1px solid #a39d95; height: 30px; padding: 0 5px; width: 138px; }
 ul#application_menu > li.request_course a,
-ul#application_menu > li.request_course a:visited { color: #d05d42; font-size: 12px; font-weight: bold; text-align: center; vertical-align: middle; }
+ul#application_menu > li.request_course a:visited { color: #ed1c24; font-size: 12px; font-weight: normal; text-align: center; vertical-align: middle; }
+ul#application_menu > li.request_course a:hover { font-weight: bold; }
 
 
 ul#documentation_menu { background-color: #edebe9; display: none; float: right; font-size: 14px; font-weight: 400; line-height: 18px; margin-top: 0; }
@@ -160,40 +162,46 @@ ul#documentation_menu > li > a.active:after { border-color: transparent transpar
 #site_sub_nav > ul > .close_button a:focus { outline: none; }
 
 /* ==|== home page content styles =========================================== */
-#announcements { background: #d8e7f3; border: 1px solid #88a5a1; clear: both; color: #686e71; display: none; margin: 0 0 18px 0; padding: 5px; }
+#announcements { background: #d8e7f3; border: 1px solid #88a5a1; clear: both; color: #333333; display: none; float: left; margin: 0 0 18px 0; padding: 0; width: 100%; }
 #announcements.alert { background: #fff18a; border-color: #f4d706; }
-#announcements > h1 { border-right: 1px solid #88a5a1; color: #231f20; float: left; font: 18px "Open Sans",sans-serif; margin: 0 18px 0 0; padding: 12px 9px; width: 276px; }
+#announcements > h1 { border-right: 1px solid #88a5a1; color: #231f20; float: left; font: 18px "Open Sans",sans-serif; min-height: 40px; margin: 5px 18px 5px 5px; padding: 12px 9px; width: 276px; }
 #announcements.alert > h1 { border-color: #f4d706; }
-#announcements > p { margin-left: 320px; padding: 0; }
+#announcements > p { font-size: 14px; margin: 20px 0 20px 320px; padding: 0; }
 #announcements > p a { color: #231f20; }
-#announcements > p a:hover { color: #686e71; }
+#announcements > p a:hover { color: #333333; }
 
 #dashboard { clear: both; }
 #dashboard a { display: block; text-decoration: none; }
 #dashboard ul { list-style-type: none; margin: 0; padding: 0; }
 
-#rotating_tips { background: #ffffff; border: 1px solid #939598; float: right; height: 218px; padding: 0 70px; width: 482px; }
-#rotating_tips > div { padding: 15px; position: static; height: 188px; overflow: hidden;}
-#rotating_tips > div h1 { font: 300 24px "Open Sans",sans-serif; margin-bottom: 10px; }
+#rotating_tips_no_js { display: none; }
+#rotating_tips { background: #ffffff; border: 1px solid #939598; float: right; height: 218px; padding: 0 51px; width: 520px; } /* when changing #rotating_tips check #rotating_tips_no_js in legacy.css */
+#rotating_tips > div { padding: 10px 6px; position: static; height: 198px; overflow: hidden; }
+#rotating_tips > div h1 { font: 300 20px "Open Sans",sans-serif; margin-bottom: 10px; }
 #rotating_tips > div p { margin-bottom: 10px; }
-#rotating_tips > div a { color: #231f20;  text-decoration: underline; }
+#rotating_tips > div a { color: #231f20; display: inline; text-decoration: underline; }
 #rotating_tips > div ol,
-#rotating_tips > div ul { list-style-type: disc; margin: 0 0 10px 20px; }
+#rotating_tips > div ul { margin: 0 0 7px 20px; }
+#rotating_tips > div ul { list-style-type: disc; }
+#rotating_tips > div ol > li,
+#rotating_tips > div ul > li { padding-bottom: 3px; }
 #rotating_tips > div img { position: relative; transition: bottom .5s, left .5s, right .5s; -moz-transition: bottom .5s, left .5s, right .5s; -o-transition: bottom .5s, left .5s, right .5s; -webkit-transition: bottom .5s, left .5s, right .5s; }
-#rotating_tips > div img.b { bottom: 0; }
-#rotating_tips > div img.b:hover { bottom: 5px; }
-#rotating_tips > div img.bl { bottom: 0; float: left; left: -20px; }
-#rotating_tips > div img.bl:hover { bottom: 5px; left: -15px; }
-#rotating_tips > div img.br { bottom: 0; float: right; right: -20px; }
-#rotating_tips > div img.br:hover { bottom: 5px; right: -15px; }
+/* image bouncey offset for bottom = negative #rotating_tips > div bottom padding - 1px */
+#rotating_tips > div img.b { bottom: -11px; }
+#rotating_tips > div img.b:hover { bottom: -6px; }
+#rotating_tips > div img.bl { bottom: -11px; float: left; left: -20px; }
+#rotating_tips > div img.bl:hover { bottom: -6px; left: -15px; }
+#rotating_tips > div img.br { bottom: -11px; float: right; right: -20px; }
+#rotating_tips > div img.br:hover { bottom: -6px; right: -15px; }
+
 #rotating_tips > div * { margin: 0; padding: 0; }
-#rotating_tips > div.new:after { background: url('../images/banner.png') no-repeat; color: #ffffff; content: 'New!'; font: bold 18px "Open Sans",sans-serif; height: 35px; padding-top: 15px; position: absolute; right: 32px; text-align: center; top: 2px; width: 132px; -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); -webkit-transform: rotate(45deg); }
+#rotating_tips > div.new:after { background: url('../images/banner.png') no-repeat; color: #ffffff; content: 'New!'; font: bold 18px "Open Sans",sans-serif; height: 35px; padding-top: 15px; position: absolute; right: 8px; text-align: center; top: 2px; width: 132px; -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); -webkit-transform: rotate(45deg); }
 
 .jshowoff.rotating_tips { float: right; height: 220px; overflow: hidden; width: 624px; }
 #rotating_tips + .jshowoff-controls { margin: 0; position: absolute; width: 100%;}
 #rotating_tips + .jshowoff-controls > a.jshowoff-play { display: none; }
 #rotating_tips + .jshowoff-controls > a.jshowoff-next,
-#rotating_tips + .jshowoff-controls > a.jshowoff-prev {  background: #939598 no-repeat; height: 220px; line-height: 220px; margin: 0; padding: 0 15px; position: absolute; transition: background .5s; vertical-align: middle; width: 40px; -moz-transition: background .5s; -o-transition: background .5s; -webkit-transition: background .5s; }
+#rotating_tips + .jshowoff-controls > a.jshowoff-prev {  background: #939598 no-repeat; height: 220px; line-height: 220px; margin: 0; padding: 0; position: absolute; text-align: center; transition: background .5s; vertical-align: middle; width: 52px; -moz-transition: background .5s; -o-transition: background .5s; -webkit-transition: background .5s; }
 #rotating_tips + .jshowoff-controls > a.jshowoff-next:hover,
 #rotating_tips + .jshowoff-controls > a.jshowoff-prev:hover { background: #686868; }
 
@@ -202,7 +210,7 @@ ul#documentation_menu > li > a.active:after { border-color: transparent transpar
 
 
 
-#dashboard > .dialog { border: 1px solid; float: left; margin: 0 18px 18px 0; min-height: 396px; width: 300px; }
+#dashboard > .dialog { border: 1px solid; float: left; margin: 0 18px 18px 0; min-height: 385px; width: 300px; }
 #dashboard > .dialog.special { background-color: #ffffff; }
 
 #dashboard > .dialog.communicate,
@@ -211,39 +219,44 @@ ul#documentation_menu > li > a.active:after { border-color: transparent transpar
 #dashboard > .dialog.build { border-color: #9fc339; clear: left; }
 #dashboard > .dialog.communicate { border-color: #90bec5; }
 #dashboard > .dialog.evaluate { border-color: #e8896a; margin-right: 0; }
-#dashboard > .dialog.getting_started { border-color: #f69443; min-height: 155px; }
+#dashboard > .dialog.getting_started { border-color: #f69443; min-height: 160px; }
 
 #dashboard > .dialog > h1 { color: #ffffff; font: 300 18px "Open Sans",sans-serif; margin: 0; padding: 12px 14px; }
-#dashboard > .dialog.manage > h1          { background-color: #aea9a1; }
-#dashboard > .dialog.build > h1           { background-color: #9fc339; }
-#dashboard > .dialog.communicate > h1     { background-color: #90bec5; }
-#dashboard > .dialog.evaluate > h1        { background-color: #e8896a; }
-#dashboard > .dialog.getting_started > h1 { background-color: #f69443; }
+#dashboard > .dialog.manage > h1                { background-color: #aea9a1; }
+#dashboard > .dialog.manage > h1:hover          { background-color: #a39d95; }
+#dashboard > .dialog.build > h1                 { background-color: #9fc339; }
+#dashboard > .dialog.build > h1:hover           { background-color: #91bc1b; }
+#dashboard > .dialog.communicate > h1           { background-color: #90bec5; }
+#dashboard > .dialog.communicate > h1:hover     { background-color: #7fb5bf; }
+#dashboard > .dialog.evaluate > h1              { background-color: #e8896a; }
+#dashboard > .dialog.evaluate > h1:hover        { background-color: #ea7754; }
+#dashboard > .dialog.getting_started > h1       { background-color: #f69443; }
+#dashboard > .dialog.getting_started > h1:hover { background-color: #f78426; }
 #dashboard > .dialog > h1 > a,
 #dashboard > .dialog > h1 > a:visited { color: inherit; }
 
-#dashboard > .dialog > ul { color: #686e71; font: 12px Arial,sans-serif; margin-top: 8px; padding: 2px 5px; }
-#dashboard > .dialog > ul > li > h1 { color: #000000; font: 16px Georgia,serif; margin: 6px 0 0 0; padding: 0; }
+#dashboard > .dialog > ul { color: #333333; font: 11px Arial,sans-serif; margin: 4px 16px 0 16px; padding: 10px 5px; }
+#dashboard > .dialog > ul > li > h1 { color: #000000; font: 16px Georgia,serif; line-height: 18px; margin: 0; padding: 0; }
 #dashboard > .dialog > ul > li > h1 > a,
-#dashboard > .dialog > ul > li > h1 > a:visited { color: inherit; padding: 2px 6px; }
-#dashboard > .dialog > ul > li > h1 > a:hover { border: 1px solid #686e71; padding: 1px 5px; }
+#dashboard > .dialog > ul > li > h1 > a:visited { color: inherit; padding: 6px; }
+#dashboard > .dialog > ul > li > h1 > a:hover { background-color: #f0f0f0; border: 1px solid #333333; padding: 5px; }
 
-#dashboard > .dialog > ul > li > ul > li:last-child { margin-bottom: 10px; }
+
 #dashboard > .dialog > ul > li > ul > li > a,
 #dashboard > .dialog > ul > li > ul > li > a:visited { color: inherit; margin: 4px 0; padding: 3px 6px; }
-#dashboard > .dialog > ul > li > ul > li > a:hover { border: 1px solid #939598; padding: 2px 5px; }
+#dashboard > .dialog > ul > li > ul > li > a:hover { background-color: #f0f0f0; border: 1px solid #939598; padding: 2px 5px; }
 
-#additional_topics { border-top: 5px solid #414042; float: left; margin-bottom: 18px; min-height: 155px; width: 624px; }
+#additional_topics { border-top: 5px solid #414042; float: left; margin-bottom: 18px; min-height: 160px; width: 624px; }
 #additional_topics > h1 { color: #231f20; font: bold 14px Georgia,serif; margin: 12px 0 12px 18px; }
-#additional_topics > ul { border: 1px solid #6d6e71; min-height: 97px; padding-bottom: 12px; }
+#additional_topics > ul { border: 1px solid #6d6e71; min-height: 97px; padding: 0 2px 12px 0; }
 #additional_topics > ul li > h1 { color: #000000; font: bold 12px Georgia,serif; margin: 12px 12px 8px 12px; }
 #additional_topics > ul li > h1 > a,
 #additional_topics > ul li > h1 > a:visited { color: inherit; }
-#additional_topics > ul li > ul { color: #686e71; font: 12px Arial,sans-serif; }
+#additional_topics > ul li > ul { color: #333333; font: 12px Arial,sans-serif; }
 #additional_topics > ul li > ul > li { margin-left: 6px; margin-bottom: 2px; }
 #additional_topics > ul li > ul > li > a,
-#additional_topics > ul li > ul > li > a:visited { color: inherit; padding: 2px 6px; }
-#additional_topics > ul li > ul > li > a:hover { border: 1px solid #939598; padding: 1px 5px; }
+#additional_topics > ul li > ul > li > a:visited { color: inherit; padding: 3px 6px; }
+#additional_topics > ul li > ul > li > a:hover { background-color: #f0f0f0; border: 1px solid #939598; padding: 2px 5px; }
 
 
 /* ==|== inner page breadcrumbs styles ====================================== */

@@ -3,9 +3,20 @@
 
    ========================================================================== */
 
+body { width: 1244px; }
 
 #documentation_menu { display: block; }
 
-#site_sub_nav { display: block; }
+#site_sub_nav { display: block; float: right; margin-top: 20px; position: static; width: 200px; }
+#site_sub_nav > ul { clear: right; position: static; float: left; }
 
-#announcements { display: block; }
+#dashboard {  clear: none; width: 944px; }
+#dashboard > * { float: left; clear: none; display: static; }
+
+#rotating_tips_no_js { background: #ffffff; border: 1px solid #939598; display: block; float: right; height: 158px; padding: 30px 51px; width: 520px; }
+#rotating_tips_no_js p a { display: inline; }
+#rotating_tips { display: none; }
+
+#content { float: left; width: 944px; }
+
+#announcements { display: block; float: left; clear: none; width: 944px; }

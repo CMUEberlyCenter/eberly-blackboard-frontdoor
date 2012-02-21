@@ -88,57 +88,67 @@
       <section class="dialog special communicate">
 	<h1><a href="communicate#site_sub_nav/show">communicate &amp; collaborate</a></h1>
 	<ul>
-	  <li><h1><a href="communicate#set_up_groups" class="indicates_more">Set Up Groups</a></h1></li>
-	  <li>
-	    <ul>
-	      <li><a href="communicate#set_up_groups/create">Create a group</a></li>
-	    </ul>
-	  </li>
-	  
-	  <li><h1><a href="communicate#course_tools" class="indicates_more">Course Tools</a></h1></li>
-	  <li>
-	    <ul>
-	      <li><a href="communicate#course_tools" class="indicates_more">Course calendar, discussion boards, self and peer assessments, wikis, tasks</a></li>
-	    </ul>
-	  </li>
-
 	  <li><h1><a href="communicate#tools_management" class="indicates_more">Tools Management</a></h1></li>
 	  <li>
 	    <ul>
 	      <li><a href="communicate#tools_management/create_links">Create links to tools</a></li>
 	      <li><a href="communicate#tools_management/make_available">Make tools available</a></li>
 	    </ul>
-	  </li>	  
+	  </li>
+
+	  <li><h1><a href="communicate#course_tools" class="indicates_more">Course Tools</a></h1></li>
+	  <li>
+	    <ul>
+	      <li><a href="communicate#course_tools/course_calendar">Course calendar</a></li>
+	      <li><a href="communicate#course_tools/discussion_board">Discussion boards</a></li>
+	      <li><a href="communicate#course_tools/self_and_peer_assessments">Self and peer assessments</a></li>
+	      <li><a href="communicate#course_tools/wikis">Wikis</a></li>
+	      <li><a href="communicate#course_tools/tasks">Tasks</a></li>
+	      <li><a href="communicate#course_tools" class="indicates_more">See more tools</a></li>
+	    </ul>
+	  </li>
+
+	  <li><h1><a href="communicate#set_up_groups" class="indicates_more">Set Up Groups</a></h1></li>
+	  <li>
+	    <ul>
+	      <li><a href="communicate#set_up_groups/create">Create a group</a></li>
+	    </ul>
+	  </li>
 	</ul>
       </section>
       
       <section class="dialog special evaluate">
-	<h1><a href="evaluate#site_sub_nav/show">evaluate student work</a></h1>
+	<h1><a href="evaluate#site_sub_nav/show">evaluate students</a></h1>
 	<ul>
 	  <li><h1><a href="evaluate#assignments" class="indicates_more">Assignments</a></h1></li>
 	  <li>
 	    <ul>
-	      <li><a href="evaluate#assignments">Add assignments</a></li>
-	      <li><a href="evaluate#assignments">Grade and provide feedback</a></li>
-	      <li><a href="evaluate#assignments">Download assignments for grading offline</a></li>
+	      <li><a href="evaluate#assignments/add">Add an assignment</a></li>
+	      <li><a href="evaluate#assignments/grade">Grade an assignment</a></li>
+	      <li><a href="evaluate#assignments/download">Download assignments for grading offline</a></li>
 	    </ul>
 	  </li>
 
-	  <li><h1><a href="evaluate#tests" class="indicates_more">Tests (&amp; Surveys)</a></h1></li>
+	  <li><h1><a href="evaluate#manage_tests" class="indicates_more">Manage Tests &amp; Surveys</a></h1></li>
 	  <li>
 	    <ul>
-	      <li><a href="evaluate#tests">Create a new test, add questions</a></li>
-	      <li><a href="evaluate#tests">Deploy test in a content area</a></li>
-	      <li><a href="evaluate#tests">Make test available to students</a></li>
+	      <li><a href="evaluate#manage_tests/create">Create a new test, add questions</a></li>
+	    </ul>
+	  </li>
+
+	  <li><h1><a href="evaluate#deploy_tests" class="indicates_more">Administer Tests &amp; Surveys</a></h1></li>
+	  <li>
+	    <ul>
+	      <li><a href="evaluate#deploy_tests/make_available">Make a test available</a></li>
 	    </ul>
 	  </li>
 
 	  <li><h1><a href="evaluate#grades" class="indicates_more">The Grade Center</a></h1></li>
 	  <li>
 	    <ul>
-	      <li><a href="evaluate#grades">Enter and modify grades</a></li>
-	      <li><a href="evaluate#grades">Download and upload grades</a></li>
-	      <li><a href="evaluate#grades">Managing what grades students see</a></li>
+	      <li><a href="evaluate#grades/enter">Enter and modify grades</a></li>
+	      <li><a href="evaluate#grades/offline">Download and upload grades</a></li>
+	      <li><a href="evaluate#grades/student_view_options">Manage what grades students see</a></li>
 	    </ul>
 	  </li>
 	</ul>

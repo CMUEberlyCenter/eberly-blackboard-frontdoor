@@ -44,6 +44,7 @@ function prepare_dashboard() {
      */
     function columnize_additional_support_topics() {
 	$('#additional_topics > ul > li > h1').addClass('dontend');
+	$('#additional_topics > ul > li > ul > li').addClass('dontend');
 	$('#additional_topics > ul').columnize({ columns : 4 });
     }
 }
@@ -329,7 +330,6 @@ function prepare_site_sub_nav( should_show_site_sub_nav ) {
             $('#site_sub_nav').data('needsHeightSet', $(this));
 	    
             $(this).columnize({
-		lastNeverTallest : true,
 		columns : Math.min( $(this).children('li').children('ul').size(), 4 ),
 		doneFunc : function() { // create columns with explicitly equal heights (for borders)
 		    

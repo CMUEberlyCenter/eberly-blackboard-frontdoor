@@ -26,7 +26,16 @@
   <body>
     
     <!--#include virtual="/blackboard/includes/header.html" --> 
-    
+
+    <section id="announcements">
+      <h1>Blackboard Downtime Alert!</h1>
+      <p>
+        Blackboard will be unavailable from<br/>
+	<strong>Tueday, January 3 at 8:00 am</strong> until <strong>Wednesday, January 4 at 8:00 am</strong>(EST)<br/>
+	for necessary system maintenance.
+      </p>
+    </section>
+
     <section id="dashboard">
 
       <section id="rotating_tips">

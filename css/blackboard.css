@@ -39,7 +39,7 @@ a.indicates_more:after { content: "..."; }
 #page_header ul li { display: inline; }
 
 
-#banner a { float: left; height: 56px; margin: 20px 0px 14px 0px; width: 334px; }
+#banner a { float: left; height: 56px; margin: 20px 0 6px 0; width: 302px; }
 
 
 #contact_nav { bottom: 132px; float: right; position: absolute; text-align: right; 
@@ -49,7 +49,7 @@ a.indicates_more:after { content: "..."; }
                                      content: " | "; /* flanking spaces prevents unbalanced single space from display:inline */ }
 #contact_nav > ul > li a,
 #contact_nav > ul > li a:visited { color: inherit; display: inline; padding: 2px 6px; }
-#contact_nav > ul > li a:hover { border: 1px solid #808285; padding: 1px 5px; }
+#contact_nav > ul > li a:hover { border: 1px solid #939598; padding: 1px 5px; }
 
 
 #site_search { bottom: 90px; position: absolute; right: 0; text-align: right; }
@@ -65,7 +65,7 @@ a.indicates_more:after { content: "..."; }
 ul#application_menu > li { float: left; line-height: 32px; margin-right: 2px; }
 ul#application_menu > li:last-child { margin-right: 0px; }
 ul#application_menu > li a,
-ul#application_menu > li a:visited { width: 130px; height: 32px; text-decoration: none; vertical-align: middle; }
+ul#application_menu > li a:visited { height: 32px; text-decoration: none; vertical-align: middle; width: 130px; }
 
 ul#application_menu > li.login_button { background: #a39d95; padding-left: 20px; position: relative; }
 ul#application_menu > li.login_button a,
@@ -160,6 +160,10 @@ ul#documentation_menu > li.active > a:after { border-color: transparent transpar
 #site_sub_nav > ul > .close_button a:focus { outline: none; }
 
 /* ==|== home page content styles =========================================== */
+#announcements { background: #fff18a; border: 1px solid #f4d706; clear: both; color: #686e71; display: none; margin: -24px 0 42px 0; padding: 5px; }
+#announcements > h1 { border-right: 1px solid #f4d706; color: #231f20; float: left; font: 18px "Open Sans",sans-serif; margin: 0 18px 0 0; padding: 12px 9px; width: 276px; }
+#announcements > p { margin: 0 0 0 320px; padding: 0; }
+
 #dashboard { clear: both; margin-top: -24px; }
 #dashboard a { display: block; text-decoration: none; }
 #dashboard ul { list-style-type: none; margin: 0; padding: 0; }
@@ -207,7 +211,7 @@ ul#documentation_menu > li.active > a:after { border-color: transparent transpar
 #additional_topics > ul li > ul > li { margin-left: 6px; margin-bottom: 2px; }
 #additional_topics > ul li > ul > li > a,
 #additional_topics > ul li > ul > li > a:visited { color: inherit; padding: 2px 6px; }
-#additional_topics > ul li > ul > li > a:hover { border: 1px solid #808285; padding: 1px 5px; }
+#additional_topics > ul li > ul > li > a:hover { border: 1px solid #939598; padding: 1px 5px; }
 
 
 /* ==|== page footer styles ================================================= */

@@ -1,0 +1,200 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+  <head>
+    <meta charset="utf-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> -->
+
+    <title>Carnegie Mellon Blackboard</title>
+    <meta name="description" content="The Carnegie Mellon Blackboard documentation site">
+    <meta name="author" content="Carnegie Mellon University">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/blackboard.css">
+    <noscript>
+      <link rel="stylesheet" href="css/legacy.css">
+    </noscript>
+
+    <script src="js/libs/modernizr-2.0.6.min.js"></script>
+  </head>
+
+  <body>
+    
+    <!--#include virtual="/blackboard/includes/header.html" --> 
+    
+    <section id="dashboard">
+
+      <section id="rotating_tips">
+	rotating tips
+      </section>
+      
+      <section class="dialog manage">
+	<h1><a href="#">manage users</a></h1>
+	<ul>
+	  <li>
+	    <ul>
+	      <li><a href="#">User accounts</a></li>
+	      <li><a href="#">User roles and affordances</a></li>
+	      <li><a href="#">Enroll students</a></li>
+	      <li><a href="#">Changing a user's role</a></li>
+	      <li><a href="#">List of users enrolled in the course</a></li>
+	      <li><a href="#">Guest access</a></li>
+	    </ul>
+	  </li>
+	</ul>
+      </section>
+      
+      <section class="dialog special build">
+	<h1><a href="#">build a course</a></h1>
+	<ul>
+	  <li><h1><a href="#" class="indicates_more">The Course Menu</a></h1></li>
+	  <li>
+	    <ul>
+	      <li><a href="#">Default menu content</a></li>
+	      <li><a href="#">Changing the course menu</a></li>
+	    </ul>
+	  </li>
+
+	  <li><h1><a href="#" class="indicates_more">Course Content Pages, Items</a></h1></li>
+	  <li>
+	    <ul>
+	      <li><a href="#">Content areas, blank pages, module pages</a></li>
+	      <li><a href="#">Content items, files, folders, links, more</a></li>
+	    </ul>
+	  </li>
+
+	  <li><h1><a href="#" class="indicates_more">Rearrange Content</a></h1></li>
+	  <li>
+	    <ul>
+	      <li><a href="#">Drag and drop, reorder content window</a></li>
+	    </ul>
+	  </li>
+
+	  <li><h1><a href="#" class="indicates_more">Make Course Available</a></h1></li>
+	  <li>
+	    <ul>
+	      <li><a href="#" class="indicates_more">Follow these steps</a></li>
+	    </ul>
+	  </li>
+	</ul>
+      </section>
+      
+      <section class="dialog special communicate">
+	<h1><a href="#">communicate &amp; collaborate</a></h1>
+	<ul>
+	  <li><h1><a href="#" class="indicates_more">Configure Course Tools</a></h1></li>
+	  <li>
+	    <ul>
+	      <li><a href="#">Selecting and setting up tools</a></li>
+	      <li><a href="#">Creating links to tools</a></li>
+	      <li><a href="#">Making tools available or unavilable</a></li>
+	    </ul>
+	  </li>	  
+	  
+	  <li><h1><a href="#" class="indicates_more">Set Up Groups</a></h1></li>
+	  <li>
+	    <ul>
+	      <li><a href="#">Creating a group</a></li>
+	    </ul>
+	  </li>
+	</ul>
+      </section>
+      
+      <section class="dialog special evaluate">
+	<h1><a href="#">evaluate student work</a></h1>
+	<ul>
+	  <li><h1><a href="#" class="indicates_more">Assignments</a></h1></li>
+	  <li>
+	    <ul>
+	      <li><a href="#">Add assignments</a></li>
+	      <li><a href="#">Grade and provide feedback</a></li>
+	      <li><a href="#">Download assignments for grading offline</a></li>
+	    </ul>
+	  </li>
+
+	  <li><h1><a href="#" class="indicates_more">Tests (&amp; Surveys)</a></h1></li>
+	  <li>
+	    <ul>
+	      <li><a href="#">Create a new test, add questions</a></li>
+	      <li><a href="#">Deploy test in a content area</a></li>
+	      <li><a href="#">Make test available to students</a></li>
+	    </ul>
+	  </li>
+
+	  <li><h1><a href="#" class="indicates_more">The Grade Center</a></h1></li>
+	  <li>
+	    <ul>
+	      <li><a href="#">Enter and modify grades</a></li>
+	      <li><a href="#">Download and upload grades</a></li>
+	      <li><a href="#">Managing what grades students see</a></li>
+	    </ul>
+	  </li>
+	</ul>
+      </section>
+
+      <section class="dialog getting_started">
+	<h1><a href="#">getting started for Students</a></h1>
+	<ul>
+	  <li>
+	    <ul>
+	      <li><a href="#">Accessing the course</a></li>
+	      <li><a href="#">Managing documents and using tools</a></li>
+	      <li><a href="#">Finding My Grades</a></li>
+	    </ul>
+	  </li>
+	</ul>
+      </section>
+
+      <section id="additional_topics">
+	<h1>Additional Support Topics</h1>
+	<ul>
+	  <li><h1><a href="#" class="indicates_more">Policies</a></h1></li>
+	  <li>
+            <ul>
+              <li><a href="#">General Use</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Copyright</a></li>
+            </ul>
+	  </li>
+
+	  <li><h1>Other Services</h1></li>
+	  <li>
+            <ul>
+              <li><a href="http://www.cmu.edu/hub">The HUB</a></li>
+              <li><a href="http://www.cmu.edu/computing">Computing Services</a></li>
+              <li><a href="http://www.cmu.edu/academic-development">Academic Development</a></li>
+            </ul>
+	  </li>
+
+	  <li><h1>Teaching</h1></li>
+	  <li>
+            <ul>
+              <li><a href="http://www.cmu.edu/teaching/principles">Learning Principles</a></li>
+              <li><a href="http://www.cmu.edu/teaching/designteach">Course Design</a></li>
+              <li><a href="http://www.cmu.edu/teaching/seminars">Teaching Seminars</a></li>
+            </ul>
+	  </li>
+	</ul>
+
+      </section>
+
+    </section>
+
+    <!--#include virtual="/blackboard/includes/footer.html" --> 
+  
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+    <script src="js/libs/jquery.columnizer.js" type="text/javascript" charset="utf-8"></script>
+      
+    <script defer src="js/plugins.js"></script>
+    <script defer src="js/script.js"></script>
+
+  </body>
+  
+</html>

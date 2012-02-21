@@ -11,22 +11,8 @@
     <link rel="stylesheet" href="css/style.css">
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-    <script src="js/libs/jquery.columnizer.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/libs/jquery.columnizer.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/libs/modernizr-2.0.6.min.js"></script>
-
-    <script>
-      $(function(){
-        $('#documentation_sub_nav h1').addClass("dontend");
-        $('.columns').columnize({ columns : 4 })
-      });
-    </script>
-  <script>
-    $(function() {
-      $('footer').addClass("fade");
-      $('#content').addClass("fade");
-    });
-  </script>
-
   </head>
 
   <body>
@@ -55,7 +41,6 @@
       </section>
       
       <nav id="site_nav" role="navigation">
-
 	<ul id="application_menu">
 	  <li class="login_button"><a href="#" tabindex="1">Login</a></li>
 	  <li class="request_course"><a href="#" class="indicates_more">Request a course</a></li>
@@ -70,49 +55,190 @@
 	</ul>
       </nav>
 
-    </header>
-
-    <nav id="documentation_sub_nav">
-      <ul id="manage_sub_menu" class="columns">
-	<ul>
-	  <li><h1><a href="#">User accounts</a></h1></li>
-	  <li><a href="#">Andrew Accounts</a></li>
-	  <li><a href="#">Blackboard Sponsored Accounts</a></li>
-	</ul>
-
-	<ul>
-	  <li><h1><a href="#">Roles and affordances</a></h1></li>
-	  <li><a href="#">Changing a User's Role</a></li>
-	</ul>
-
-	<ul>
+      <nav id="site_sub_nav">
+	<ul class="manage">
+	  <li><h1><a href="#">User Accounts</a></h1></li>
+	  <li>
+	    <ul>
+	      <li><a href="#">Andrew accounts</a></li>
+	      <li><a href="#">Blackboard sponsored accounts</a></li>
+	    </ul>
+	  </li>
+	  
+	  <li><h1><a href="#">Roles and Affordances</a></h1></li>
+	  <li>
+	    <ul>
+	      <li><a href="#">Changing a User's Role</a></li>
+	    </ul>
+	  </li>
+	  
 	  <li><h1><a href="#">How users get enrolled</a></h1></li>
-	  <li><a href="#">Automatic Enrollment for Instructors and Enrolled Students</a></li>
-	  <li><a href="#">Manually Enrolling a User</a></li>
-	</ul>
-
-	<ul>
+	  <li>
+	    <ul>
+	      <li><a href="#">Automatic Enrollment for Instructors and Enrolled Students</a></li>
+	      <li><a href="#">Manually Enrolling a User</a></li>
+	    </ul>
+	  </li>
+	  
 	  <li><h1><a href="#">Seeing who is enrolled</a></h1></li>
-	  <li><a href="#">Listing All Users</a></li>
-	  <li><a href="#">Searching for Specific Users</a></li>
-	</ul>
-	
-	<ul>
+	  <li>
+	    <ul>
+	      <li><a href="#">Listing All Users</a></li>
+	      <li><a href="#">Searching for Specific Users</a></li>
+	    </ul>
+	  </li>
+	  
 	  <li><h1><a href="#">Guest access</a></h1></li>
-	  <li><a href="#">Making Selected Areas of the Course Available to Guests</a></li>
-	  <li><a href="#">Turning on Guest Access at the Course Level</a></li>
+	  <li>
+	    <ul>
+	      <li><a href="#">Making Selected Areas of the Course Available to Guests</a></li>
+	      <li><a href="#">Turning on Guest Access at the Course Level</a></li>
+	    </ul>
+	  </li>
 	</ul>
 
-      </ul>
+
+	<ul class="build">
+	  <li><h1><a href="#">Edit Mode</a></h1></li>
+	  <li>
+	    <ul>
+	      <li>
+		Instructors: Turn "Edit Mode" on to access editing functionality and to toggle 
+		between the instructor view and the student view of the course. You will find 
+		the "Edit Mode" button in the upper right of a course page. "CLICK" on the 
+		button to turn it on or off.
+	      </li>
+	    </ul>
+	  </li>
       
-      <!--
-      <ul id="build_sub_menu">
-      </ul>
-      -->
+          <li><h1><a href="#">The course menu</a></h1></li>
+	  <li>
+	    <ul>
+	      <li><a href="#">Default menu for a new course vs. a restored course</a></li>
+	      <li><a href="#">How to change the course menu</a></li>
+            </ul>
+	  </li>
 
-    </nav>
+          <li><h1><a href="#">Add areas and pages</a></h1></li>
+	  <li>
+	    <ul>
+	      <li><a href="#">Content areas</a></li>
+	      <li><a href="#">Blank pages</a></li>
+	      <li><a href="#">Module pages</a></li>
+            </ul>
+	  </li>
 
+          <li><h1><a href="#">Add content</a></h1></li>
+	  <li>
+	    <ul>
+	      <li><a href="#">Item</a></li>
+	      <li><a href="#">File</a></li>
+	      <li><a href="#">Folder</a></li>
+	      <li><a href="#">Course link</a></li>
+	      <li><a href="#">External link</a></li>
+	      <li><a href="#">Learning module</a></li>
+	      <li><a href="#">Syllabus</a></li>
+	    </ul>
+	  </li>
 
+          <li><h1><a href="#">Rearrange content</a></h1></li>
+	  <li>
+	    <ul>
+	      <li><a href="#">Rearrange items on a page</a></li>
+	      <li><a href="#">Move items from one area to another</a></li>
+	    </ul>
+	  </li>
+
+          <li><h1><a href="#">Confiugre course tools</a></h1></li>
+	  <li>
+	    <ul>
+	      <li><a href="#">How to make tools available for students to access</a></li>
+	    </ul>
+	  </li>
+	</ul>
+
+	<ul class="communicate">
+	  <li><h1><a href="#">Communication &amp; Collaboration tools</a></h1></li>
+	  <li>
+	    <ul>
+	      <li><a href="#">Selecting and setting up tools</a></li>
+	      <li><a href="#">Creating links to tools</a></li>
+	      <li><a href="#">Making tools available or unavailable</a></li>
+	    </ul>
+	  </li>
+
+	  <li><h1><a href="#">Setting Up Groups</a></h1>
+	  <li>
+	    <ul>
+	      <li><a href="#">Creating a group</a></li>
+	    </ul>
+	  </li>
+	</ul>
+
+	<ul class="evaluate">
+	  <li><h1><a href="#">Tests (&amp; Surveys)</a></h1></li>
+	  <li>
+	    <ul>
+	      <li><a href="#">Create a new test</a></li>
+	      <li><a href="#">Add questions to a test</a></li>
+	      <li><a href="#">Deploy test in a content area</a></li>
+	      <li><a href="#">Make a test available to students</a></li>
+	      <li><a href="#">Edit, export, copy, delete tests</a></li>
+	      <li><a href="#">Create a test offline</a></li>
+	      <li><a href="#">Import a test</a></li>
+	    </ul>
+	  </li>
+	  
+	  <li><h1><a href="#">Assignments</a></h1></li>
+	  <li>
+	    <ul>
+	      <li><a href="#">Add assignments</a></li>
+	      <li><a href="#">Submit assignments (for students)</a></li>
+	      <li><a href="#">Grade and/or provide feedback</a></li>
+	      <li><a href="#">Download assignments for grading offline</a></li>
+	    </ul>
+	  </li>
+	  
+	  <li><h1><a href="#">The Grade Center</a></h1></li>
+	  <li>
+	    <ul>
+	      <li><a href="#">Enter and modify grades</a></li>
+	      <li><a href="#">Download and upload grades</a></li>
+	      <li><a href="#">Students' view (My Grades)</a></li>
+	    </ul>
+	  </li>
+	</ul>
+
+	<ul class="getting_started">
+	  <li><h1><a href="#">Getting Started</a></h1></li>
+	  <li>
+	    <ul>
+	      <li><a href="#">Accessing the course</a></li>
+	      <li><a href="#">Managing documents and using tools</a></li>
+	      <li><a href="#">Finding My Grades</a></li>
+	    </ul>
+	  </li>
+
+	  <li><h1><a href="#">Troubleshooting</a></h1></li>
+	  <li>
+	    <ul>
+	      <li><a href="#">Access problems related to enrollment</a></li>
+	    </ul>
+	  </li>
+
+	  <li><h1><a href="#">Other support places</a></h1></li>
+	  <li>
+	    <ul>
+	      <li><a href="#">The Hub</a></li>
+	      <li><a href="#">Computing Services Help Desk</a></li>
+	      <li><a href="#">Academic Development</a></li>
+	      <li><a href="#">Intercultural Communication Center</a></li>
+	    </ul>
+	  </li>
+	</ul>
+      </nav>
+
+    </header>
     
 <section id="content">
 
@@ -239,18 +365,74 @@
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
--->
+
   <script>
   $("nav li").click(
   function() {
     $("nav li").removeClass("active");
+    $('#site_sub_nav > ul').hide();
+    $('#site_sub_nav > ul.' + $(this).attr('class')).show();
     $(this).addClass("active");
   });
 
 
 </script>
 
-  
+-->
+
+    <script>
+      $('#documentation_menu > li').click(
+        function() {
+          $('#documentation_menu > li').removeClass('active');
+          $('#site_sub_nav > ul').hide();
+          $('#site_sub_nav > ul.' + $(this).attr('class')).slideDown("fast");
+
+//          $('#site_sub_nav > ul.' + $(this).attr('class')).columnize({
+//            columns : 4 });
+          $(this).addClass("active");
+});
+</script>
+
+
+    <script>
+      <!-- Columnize the site's sub-navigation, then hide it -->
+      $(function(){
+        $('#site_sub_nav > ul > li > h1').addClass("dontend");
+        $('#site_sub_nav > ul > li > ul > li').addClass("dontend");
+        $('#site_sub_nav').children('ul').map( 
+                                  function(){  
+                                  $('#site_sub_nav').data('needsHeightSet', $(this) );
+                                  $(this).columnize({
+                                  columns : Math.min( $(this).children('li').children('ul').size(), 4),
+                                  doneFunc : function(){
+                                    // Create columns with explicit heights: Vertical borders will
+
+                                    // determine the height of the tallest column
+                                    var maxColumnHeight = 0;
+                                    $($('#site_sub_nav').data('needsHeightSet')).children('.column').each( function(index) {
+                                      maxColumnHeight = Math.max(maxColumnHeight, $(this).height());
+                                    });
+
+                                    // explicitly set each column height to be that height
+                                    //$('#site_sub_nav > ul > .column').css({ 'height' : maxColumnHeight });   // Option A
+                                    $($('#site_sub_nav ').data('needsHeightSet')).children('.column').css({ 'height' : maxColumnHeight });
+                                    // don't let the element within the column inherit the explicit height
+                                    $('#site_sub_nav > ul > .column > ul').css({ 'height' : 'auto' });
+
+                                    // hide each sub-nav item after the columns have been calculated
+                                    //$('#site_sub_nav').data('needsHeightSet', 'foo' );
+
+                                  }
+        }) })
+      });
+
+      <!-- By default, hide all site sub-navigation -->
+      $(function(){
+        $('#site_sub_nav > ul').hide();
+      });
+
+
+    </script>
 
 
   </body>

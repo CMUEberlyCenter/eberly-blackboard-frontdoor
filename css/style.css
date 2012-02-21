@@ -306,66 +306,78 @@ a.indicates_more:after {
 
 /* END HEADER STYLES */
 
-#documentation_sub_nav {
+#site_sub_nav {
     position: relative;
     width: 100%;
     padding: 0;
     margin: 0;
 }
-#documentation_sub_nav > ul {
+#site_sub_nav > ul {
     position: absolute;
     width: 100%;
     border-bottom: 10px solid;
     padding: 15px 0 10px 0;
 }
 
-#documentation_sub_nav > ul#manage_sub_menu          { background-color: #BAB6B0; border-color: #A39D95; }
-#documentation_sub_nav > ul#build_sub_menu           { background-color: #ADCD54; border-color: #91BC1B; }
-#documentation_sub_nav > ul#communicate_sub_menu     { background-color: #9fc8cf; border-color: #7FB5BF; }
-#documentation_sub_nav > ul#evaluate_sub_menu        { background-color: #ef997f; border-color: #EA7754; }
-#documentation_sub_nav > ul#getting_started_sub_menu { background-color: #f9a35c; border-color: #F78426; }
+#site_sub_nav > ul.manage          { background-color: #BAB6B0; border-color: #A39D95; }
+#site_sub_nav > ul.build           { background-color: #ADCD54; border-color: #91BC1B; }
+#site_sub_nav > ul.communicate     { background-color: #9fc8cf; border-color: #7FB5BF; }
+#site_sub_nav > ul.evaluate        { background-color: #ef997f; border-color: #EA7754; }
+#site_sub_nav > ul.getting_started { background-color: #f9a35c; border-color: #F78426; }
 
-#documentation_sub_nav > ul ul {
+#site_sub_nav > ul ul {
     height: 100%;
     padding: 0 10px;
-    /*border-left: 1px solid #fff;    */
 }
 
-#documentation_sub_nav ul > li > h1 a,
-#documentation_sub_nav ul > li > h1 a:hover,
-#documentation_sub_nav ul > li > h1 a:visited {
+#site_sub_nav > ul > .column {
+    border-left: 1px solid #fff;
+    margin-left: -1px; 
+    width: 25% !important;
+}
+
+#site_sub_nav > ul > .column:first-child {
+    margin-left: 0;
+    border-left: none;
+}
+
+
+#site_sub_nav ul  li > h1 a,
+#site_sub_nav ul  li > h1 a:hover,
+#site_sub_nav ul  li > h1 a:visited {
+    text-transform: capitalize;
     color: #ffffff;
     text-decoration: none;
     font: 15px Georgia,serif;
     background-color: inherit;
 }
 
-#documentation_sub_nav ul > li > h1 {
-    padding: 0;
+#site_sub_nav ul  li > h1 {
+    padding: 0 10px;
     margin: 0;
 }
 
 
-#documentation_sub_nav ul > li a,
-#documentation_sub_nav ul > li a:visited {
+#site_sub_nav ul > li a,
+#site_sub_nav ul > li a:visited {
     color: #000;
     text-decoration: none;
-    font: 11px Arial,sans-serif;
     display: block;
-    padding: 4px;
-
 }
 
-#documentation_sub_nav ul > li a:hover {
+#site_sub_nav ul > li a:hover {
     background-color: #EDEBE9;
 }
 
-#documentation_sub_nav ul > li {
+#site_sub_nav ul > li {
     margin-left: -4px;
     margin-bottom: 2px;
+    padding: 4px;
+    font: 11px Arial,sans-serif;
+    line-height: 15px;
 }
 
-#documentation_sub_nav ul > li:first-line {
+#site_sub_nav ul > li:first-line {
     margin-bottom: 18px;
 }
 

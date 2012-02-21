@@ -9,6 +9,7 @@ body { width: 1244px; }
 
 #site_sub_nav { display: block; float: right; margin-top: 20px; position: static; width: 200px; }
 #site_sub_nav > ul { clear: right; position: static; float: left; }
+#site_sub_nav > ul .external:after { background: none; }
 
 #dashboard {  clear: none; width: 944px; }
 #dashboard > * { float: left; clear: none; display: static; }

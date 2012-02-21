@@ -33,13 +33,13 @@
     <section id="content" class="manage">
       <h1>Manage Users</h1>
       
-      <!--#include virtual="includes/manage/accounts.html" -->
-	
-      <!--#include virtual="includes/manage/roles.html" -->
-
       <!--#include virtual="includes/manage/enrollment.html" -->
 
+      <!--#include virtual="includes/manage/accounts.html" -->
+	
       <!--#include virtual="includes/manage/guests.html" -->
+
+      <!--#include virtual="includes/manage/roles.html" -->
     </section>
 
     <!--#include virtual="includes/footer.html" --> 

@@ -34,7 +34,7 @@
 	  </p>
 	  <p>
 	    Please see our complete 
-	    <a href="rotating_tips">list of rotating tips</a>.
+	    <a href="rotatingtips">list of rotating tips</a>.
 	  </p>
 	</noscript>
       </section>
@@ -49,11 +49,11 @@
 	  <li>
 	    <ul>
 	      <li><a href="manage#accounts">User accounts</a></li>
-	      <li><a href="manage#roles">Roles and affordances</a></li>
-	      <li><a href="manage#enrollment">User Enrollment in a Blackboard Course</a></li>
+	      <li><a href="manage#enrollment">Student enrollment</a></li>
 	      <li><a href="manage#enrollment/manual">Enroll a TA</a></li>
 	      <li><a href="manage#enrollment/list">List enrolled users</a></li>
-	      <li><a href="manage#guessts">Guest access</a></li>
+	      <li><a href="manage#guests">Guest access</a></li>
+	      <li><a href="manage#roles">Roles and affordances</a></li>
 	    </ul>
 	  </li>
 	</ul>
@@ -149,7 +149,7 @@
 	    </ul>
 	  </li>
 
-	  <li><h1><a href="evaluate#deploy_tests" class="indicates_more">Administer Tests &amp; Surveys</a></h1></li>
+	  <li><h1><a href="evaluate#deploy_tests" class="indicates_more">Administer a Test</a></h1></li>
 	  <li>
 	    <ul>
 	      <li><a href="evaluate#deploy_tests/make_available">Make a test available</a></li>
@@ -167,14 +167,16 @@
 	</ul>
       </section>
 
-      <section class="dialog getting_started">
-	<h1><a href="getting_started#site_sub_nav/show">getting started for Students</a></h1>
+      <section class="dialog gettingstarted">
+	<h1><a href="gettingstarted#site_sub_nav/show">getting started for Students</a></h1>
 	<ul>
 	  <li>
 	    <ul>
-	      <li><a href="getting_started#getting_started/access">Access a Blackboard course</a></li>
-	      <li><a href="getting_started#getting_started/assignments">View &amp; submit assignments</a></li>
-	      <li><a href="getting_started#preferences">Personal preferences</a></li>
+	      <li><a href="gettingstarted#gettingstarted/access">Access a Blackboard course</a></li>
+	      <li><a href="gettingstarted#gettingstarted/assignments">View &amp; submit assignments</a></li>
+	      <li><a href="gettingstarted#gettingstarted/grades">Check grades</a></li>
+	      <li><a href="gettingstarted#preferences">Personal preferences</a></li>
+	      <li><a href="gettingstarted#preferences/privacy">Privacy settings</a></li>
 	    </ul>
 	  </li>
 	</ul>
@@ -186,7 +188,7 @@
 	  <li><h1>Blackboard 9.1</h1></li>
 	  <li>
 	    <ul>
-	      <li><a href="whats_new">What's New</a></li>
+	      <li><a href="whatsnew">What's New</a></li>
 	      <li><a href="faq">FAQ</a></li>
 	      <li><a href="bugs">Bugs &amp; Issues</a></li>
 	    </ul>
@@ -201,21 +203,22 @@
             </ul>
 	  </li>
 
-	  <li><h1>Other Services</h1></li>
-	  <li>
-            <ul>
-              <li><a href="http://www.cmu.edu/hub">The HUB</a></li>
-              <li><a href="http://www.cmu.edu/computing">Computing Services</a></li>
-              <li><a href="http://www.cmu.edu/academic-development">Academic Development</a></li>
-            </ul>
-	  </li>
-
 	  <li><h1>Teaching</h1></li>
 	  <li>
             <ul>
               <li><a href="http://www.cmu.edu/teaching/principles">Learning Principles</a></li>
               <li><a href="http://www.cmu.edu/teaching/designteach">Course Design</a></li>
               <li><a href="http://www.cmu.edu/teaching/seminars">Teaching Seminars</a></li>
+            </ul>
+	  </li>
+
+	  <li><h1>Other Support Places</h1></li>
+	  <li>
+            <ul>
+              <li><a href="http://www.cmu.edu/hub">The HUB</a></li>
+              <li><a href="http://www.cmu.edu/computing">Computing Services</a></li>
+              <li><a href="http://www.cmu.edu/academic-development">Academic Development</a></li>
+              <li><a href="http://www.cmu.edu/icc">Intercultural Communication Center</a></li>
             </ul>
 	  </li>
 	</ul>

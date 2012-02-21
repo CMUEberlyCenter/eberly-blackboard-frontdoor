@@ -30,12 +30,20 @@
       </ul>
     </section>
 
-    <section id="content">
+    <section id="content" class="policies">
       <h1>Policies &amp; Guidelines</h1>
+
+      <!--#include virtual="includes/policies/overview.html" -->
       
       <!--#include virtual="includes/policies/general_use.html" -->
 
-      <!--#include virtual="includes/policies/acceptable_user.html" -->
+      <!--#include virtual="includes/policies/acceptable_use.html" -->
+
+      <!--#include virtual="includes/policies/privacy.html" -->
+
+      <!--#include virtual="includes/policies/copyright.html" -->
+
+      <!--#include virtual="includes/policies/intellectual_property.html" -->
     </section>
 
     <!--#include virtual="includes/footer.html" --> 

@@ -33,7 +33,7 @@
   <nav id="site_nav" role="navigation">
     <ul id="application_menu">
       <li class="login_button"><a href="https://blackboard.andrew.cmu.edu/webapps/portal/frameset.jsp" tabindex="1">Login</a></li>
-      <li class="request_course"><a href="course_request" class="indicates_more">Request a course</a></li>
+      <li class="request_course"><a href="courserequest" class="indicates_more">Request a course</a></li>
     </ul>
     
     <ul id="documentation_menu">
@@ -41,28 +41,12 @@
       <li><a href="build">build a course</a></li>
       <li><a href="communicate">communicate &amp; collaborate</a></li>
       <li><a href="evaluate">evaluate student work</a></li>
-      <li><a href="getting_started">getting started for Students</a></li>
+      <li><a href="gettingstarted">getting started for Students</a></li>
     </ul>
   </nav>
 
   <nav id="site_sub_nav" role="navigation">
     <ul class="manage">
-      <li><h1><a href="manage#accounts">User Accounts</a></h1></li>
-      <li>
-        <ul>
-          <li><a href="manage#accounts/andrew">Andrew accounts</a></li>
-          <li><a href="manage#accounts/sponsored">Blackboard sponsored accounts</a></li>
-        </ul>
-      </li>
-      
-      <li><h1><a href="manage#roles">Roles and Affordances</a></h1></li>
-      <li>
-        <ul>
-          <li><a href="manage#roles/types">Types of user roles</a></li>
-          <li><a href="manage#roles/change">Change a user's role</a></li>
-        </ul>
-      </li>
-      
       <li><h1><a href="manage#enrollment">User Enrollment in a Blackboard Course</a></h1></li>
       <li>
         <ul>
@@ -75,11 +59,27 @@
         </ul>
       </li>
       
+      <li><h1><a href="manage#accounts">User Accounts</a></h1></li>
+      <li>
+        <ul>
+          <li><a href="manage#accounts/andrew">Andrew accounts</a></li>
+          <li><a href="manage#accounts/sponsored">Blackboard sponsored accounts</a></li>
+        </ul>
+      </li>
+      
       <li><h1><a href="manage#guests">Guest Access</a></h1></li>
       <li>
         <ul>
           <li><a href="manage#guests/enroll">Enroll guests</a></li>
           <li><a href="manage#guests/enable">Enable guest access</a></li>
+        </ul>
+      </li>
+
+      <li><h1><a href="manage#roles">Roles and Affordances</a></h1></li>
+      <li>
+        <ul>
+          <li><a href="manage#roles/types">Types of user roles</a></li>
+          <li><a href="manage#roles/change">Change a user's role</a></li>
         </ul>
       </li>
     </ul>
@@ -186,6 +186,8 @@
         <ul>
           <li><a href="evaluate#assignments/add">Add an assignment</a></li>
           <li><a href="evaluate#assignments/submit">Student submission process</a></li>
+          <li><a href="evaluate#assignments/turnitin">Add a Turnitin assignment</a></li>
+          <li><a href="evaluate#assignments/submit_turnitin">Student submission process for Turnitin assignments</a></li>
           <li><a href="evaluate#assignments/grade">Grade an assignment</a></li>
           <li><a href="evaluate#assignments/download">Download assignments for grading offline</a></li>
         </ul>
@@ -202,7 +204,7 @@
         </ul>
       </li>
 
-      <li><h1><a href="evaluate#deploy_tests">Administer Tests &amp; Surveys</a></h1></li>
+      <li><h1><a href="evaluate#deploy_tests">Administer a Test</a></h1></li>
       <li>
         <ul>
           <li><a href="evaluate#deploy_tests/deploy">Deploy a test</a></li>
@@ -222,24 +224,35 @@
       </li>
     </ul>
     
-    <ul class="getting_started">
-      <li><h1><a href="getting_started#getting_started">Getting Started</a></h1></li>
+    <ul class="gettingstarted">
+      <li><h1><a href="gettingstarted#gettingstarted">Getting Started</a></h1></li>
       <li>
         <ul>
-          <li><a href="getting_started#getting_started/access">Access a Blackboard course</a></li>
-	  <li><a href="getting_started#getting_started/navigate">Course navigation</a></li>
-          <li><a href="getting_started#getting_started/communicate">Communication tools</a></li>
-	  <li><a href="getting_started#getting_started/assignments">View &amp; submit assignments</a></li>
-          <li><a href="getting_started#getting_started/grades">Check grades</a></li>
+          <li><a href="gettingstarted#gettingstarted/access">Access a Blackboard course</a></li>
+	  <li><a href="gettingstarted#gettingstarted/navigate">Course navigation</a></li>
+          <li><a href="gettingstarted#gettingstarted/communicate">Communication tools</a></li>
+	  <li><a href="gettingstarted#gettingstarted/assignments">View &amp; submit assignments</a></li>
+	  <li><a href="gettingstarted#gettingstarted/turnitin_assignments">Submit Turnitin assignments</a></li>
+          <li><a href="gettingstarted#gettingstarted/grades">Check grades</a></li>
         </ul>
       </li>
 
-      <li><h1><a href="getting_started#preferences">Personal Preferences</a></h1></li>
+      <li><h1><a href="gettingstarted#preferences">Personal Preferences</a></h1></li>
       <li>
 	<ul>
-	  <li><a href="getting_started#preferences/info">Personal information</a></li>
-	  <li><a href="getting_started#preferences/privacy">Privacy Settings</a></li>
-	  <li><a href="getting_started#preferences/language">Change language</a></li>
+	  <li><a href="gettingstarted#preferences/info">Personal information</a></li>
+	  <li><a href="gettingstarted#preferences/privacy">Privacy Settings</a></li>
+	  <li><a href="gettingstarted#preferences/language">Change language</a></li>
+	</ul>
+      </li>
+
+      <li><h1 class="external">Other Support Places</h1></li>
+      <li>
+	<ul>
+          <li><a href="http://www.cmu.edu/hub">The HUB</a></li>
+          <li><a href="http://www.cmu.edu/computing">Computing Services</a></li>
+          <li><a href="http://www.cmu.edu/academic-development">Academic Development</a></li>
+	  <li><a href="http://www.cmu.edu/icc/">Intercultural Communication Center</a></li>
 	</ul>
       </li>
     </ul>

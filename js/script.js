@@ -60,6 +60,7 @@ function prepare_content() {
     var should_show_site_sub_nav = window.location.hash == '#site_sub_nav/show' ? true : false;
     
     prepare_documentation_menu();
+    columnize_internal_content();
     
     /* Some content doesn't need article traversal, but should still get the
        link to the top of a page of long content 
@@ -76,6 +77,23 @@ function prepare_content() {
        prepare_site_sub_nav, but future transition effects will affect it. 
     */
     prepare_site_sub_nav( should_show_site_sub_nav );
+
+    // Add active class to course request link when on the page
+    var article = $.url( window.location ).segment(-1);
+    if( article == 'courserequest') { 
+	$('ul#application_menu > li.request_course a').addClass('active');
+    }
+
+    /**
+     * Columnize specified content found in the internal pages.
+     */
+    function columnize_internal_content() {
+	if ( $('#content.whatsnew').length ) {
+	    $('#content.whatsnew #overview\\/contents > ul').addClass('dontsplit');
+            $('#content.whatsnew #overview\\/contents').columnize({ columns : 2 });
+	}
+    }
+    
 }
 
 

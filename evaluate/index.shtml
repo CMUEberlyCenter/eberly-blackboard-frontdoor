@@ -14,37 +14,37 @@
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <!--#include virtual="includes/style.html" -->
-    <!--#include virtual="includes/javascript_head.html" -->
+    <!--#include virtual="../includes/style.html" -->
+    <!--#include virtual="../includes/javascript_head.html" -->
   </head>
 
   <body>
     
-    <!--#include virtual="includes/header.html" --> 
+    <!--#include virtual="../includes/header.html" --> 
 
     
     <section id="breadcrumbs" role="navigation">
       <ul>
-	<li><a href="./">Home</a></li>
-	<li><a href="evaluate">Evaluate Student Work</a></li>
+	<li><a href="http://www.cmu.edu/blackboard">Home</a></li>
+	<li><a href="../evaluate">Evaluate Student Work</a></li>
       </ul>
     </section>
 
-    <section id="content" class="evaluate">
+    <section id="content" role="main" class="evaluate">
       <h1>Evaluate Student Work</h1>
 
-      <!--#include virtual="includes/evaluate/assignments.html" -->
+      <!--#include virtual="../includes/evaluate/assignments.html" -->
 
-      <!--#include virtual="includes/evaluate/manage_tests.html" -->
+      <!--#include virtual="../includes/evaluate/manage_tests.html" -->
 
-      <!--#include virtual="includes/evaluate/deploy_tests.html" -->
+      <!--#include virtual="../includes/evaluate/deploy_tests.html" -->
       
-      <!--#include virtual="includes/evaluate/grades.html" -->
+      <!--#include virtual="../includes/evaluate/grades.html" -->
     </section>
 
-    <!--#include virtual="includes/footer.html" --> 
+    <!--#include virtual="../includes/footer.html" --> 
     
-    <!--#include virtual="includes/javascript_bottom.html" -->
+    <!--#include virtual="../includes/javascript_bottom.html" -->
   </body>
   
 </html>

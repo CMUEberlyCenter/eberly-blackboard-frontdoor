@@ -14,35 +14,35 @@
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <!--#include virtual="includes/style.html" -->
-    <!--#include virtual="includes/javascript_head.html" -->
+    <!--#include virtual="../includes/style.html" -->
+    <!--#include virtual="../includes/javascript_head.html" -->
   </head>
 
   <body>
     
-    <!--#include virtual="includes/header.html" --> 
+    <!--#include virtual="../includes/header.html" --> 
 
     
     <section id="breadcrumbs" role="navigation">
       <ul>
-	<li><a href="./">Home</a></li>
-	<li><a href="communicate">Communicate &amp; Collaborate</a></li>
+	<li><a href="http://www.cmu.edu/blackboard">Home</a></li>
+	<li><a href="../communicate">Communicate &amp; Collaborate</a></li>
       </ul>
     </section>
 
-    <section id="content" class="communicate">
+    <section id="content" role="main" class="communicate">
       <h1>Communicate &amp; Collaborate</h1>
       
-      <!--#include virtual="includes/communicate/tools_management.html" -->
+      <!--#include virtual="../includes/communicate/tools_management.html" -->
       
-      <!--#include virtual="includes/communicate/course_tools.html" -->
+      <!--#include virtual="../includes/communicate/course_tools.html" -->
 
-      <!--#include virtual="includes/communicate/set_up_groups.html" -->
+      <!--#include virtual="../includes/communicate/set_up_groups.html" -->
     </section>
 
-    <!--#include virtual="includes/footer.html" --> 
+    <!--#include virtual="../includes/footer.html" --> 
     
-    <!--#include virtual="includes/javascript_bottom.html" -->
+    <!--#include virtual="../includes/javascript_bottom.html" -->
   </body>
   
 </html>

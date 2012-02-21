@@ -14,33 +14,33 @@
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <!--#include virtual="includes/style.html" -->
-    <!--#include virtual="includes/javascript_head.html" -->
+    <!--#include virtual="../includes/style.html" -->
+    <!--#include virtual="../includes/javascript_head.html" -->
   </head>
 
   <body>
     
-    <!--#include virtual="includes/header.html" --> 
+    <!--#include virtual="../includes/header.html" --> 
 
     
     <section id="breadcrumbs" role="navigation">
       <ul>
-	<li><a href="./">Home</a></li>
-	<li><a href="bugs">Bugs &amp; Issues</a></li>
+	<li><a href="http://www.cmu.edu/blackboard">Home</a></li>
+	<li><a href="../bugs">Bugs &amp; Issues</a></li>
       </ul>
     </section>
 
-    <section id="content">
+    <section id="content" role="main">
       <h1>Bugs &amp; Issues</h1>
       
-      <!--#include virtual="includes/bugs/active.html" -->
+      <!--#include virtual="../includes/bugs/active.html" -->
 
-      <!--#include virtual="includes/bugs/resolved.html" -->
+      <!--#include virtual="../includes/bugs/resolved.html" -->
     </section>
 
-    <!--#include virtual="includes/footer.html" --> 
+    <!--#include virtual="../includes/footer.html" --> 
     
-    <!--#include virtual="includes/javascript_bottom.html" -->
+    <!--#include virtual="../includes/javascript_bottom.html" -->
   </body>
   
 </html>

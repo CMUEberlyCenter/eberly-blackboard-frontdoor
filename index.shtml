@@ -14,17 +14,22 @@
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <!--#include virtual="includes/style.html" -->
-    <!--#include virtual="includes/javascript_head.html" -->
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/blackboard.css">
+    <noscript>
+      <link rel="stylesheet" href="css/legacy.css">
+    </noscript>
+
+    <script src="js/libs/modernizr-2.0.6.min.js"></script>
   </head>
 
   <body>
     
-    <!--#include virtual="/blackboard/includes/header.html" --> 
+    <!--#include virtual="includes/header.html" --> 
 
-    <!--#include virtual="/blackboard/includes/announcements.html" -->
+    <!--#include virtual="includes/announcements.html" -->
 
-    <section id="dashboard">
+    <section id="dashboard" role="main">
       
       <section id="rotating_tips_no_js">
       	<noscript>
@@ -40,143 +45,143 @@
       </section>
 
       <section id="rotating_tips">
-	<!--#include virtual="/blackboard/includes/rotating_tips.html" -->
+	<!--#include virtual="includes/rotating_tips.html" -->
       </section>
       
       <section class="dialog manage">
-	<h1><a href="manage#site_sub_nav/show">manage users</a></h1>
+	<h1><a href="manage/#site_sub_nav/show">manage users</a></h1>
 	<ul>
 	  <li>
 	    <ul>
-	      <li><a href="manage#accounts">User accounts</a></li>
-	      <li><a href="manage#enrollment">Student enrollment</a></li>
-	      <li><a href="manage#enrollment/manual">Enroll a TA</a></li>
-	      <li><a href="manage#enrollment/list">List enrolled users</a></li>
-	      <li><a href="manage#guests">Guest access</a></li>
-	      <li><a href="manage#roles">Roles and affordances</a></li>
+	      <li><a href="manage/#accounts">User accounts</a></li>
+	      <li><a href="manage/#enrollment">Student enrollment</a></li>
+	      <li><a href="manage/#enrollment/manual">Enroll a TA</a></li>
+	      <li><a href="manage/#enrollment/list">List enrolled users</a></li>
+	      <li><a href="manage/#guests">Guest access</a></li>
+	      <li><a href="manage/#roles">Roles and affordances</a></li>
 	    </ul>
 	  </li>
 	</ul>
       </section>
       
       <section class="dialog special build">
-	<h1><a href="build#site_sub_nav/show">build a course</a></h1>
+	<h1><a href="build/#site_sub_nav/show">build a course</a></h1>
 	<ul>
-	  <li><h1><a href="build#course_menu" class="indicates_more">The Course Menu</a></h1></li>
+	  <li><h1><a href="build/#course_menu" class="indicates_more">The Course Menu</a></h1></li>
 	  <li>
 	    <ul>
-	      <li><a href="build#course_menu/default">Default course menu</a></li>
-	      <li><a href="build#course_menu/change">Change the course menu</a></li>
+	      <li><a href="build/#course_menu/default">Default course menu</a></li>
+	      <li><a href="build/#course_menu/change">Change the course menu</a></li>
 	    </ul>
 	  </li>
 
-	  <li><h1><a href="build#content_areas" class="indicates_more">Course Areas &amp; Pages</a></h1></li>
+	  <li><h1><a href="build/#content_areas" class="indicates_more">Course Areas &amp; Pages</a></h1></li>
 	  <li>
 	    <ul>
-	      <li><a href="build#content_areas/module">Create &amp; insert a module page</a></li>
+	      <li><a href="build/#content_areas/module">Create &amp; insert a module page</a></li>
 	    </ul>
 	  </li>
 
-	  <li><h1><a href="build#add_content" class="indicates_more">Add Content</a></h1></li>
+	  <li><h1><a href="build/#add_content" class="indicates_more">Add Content</a></h1></li>
 	  <li>
 	    <ul>
-	      <li><a href="build#add_content" class="indicates_more">Items, folders, course links, syllabi, &amp; more</a></li>
+	      <li><a href="build/#add_content" class="indicates_more">Items, folders, course links, syllabi, &amp; more</a></li>
 	    </ul>
 	  </li>
 
-	  <li><h1><a href="build#rearrange" class="indicates_more">Rearrange Items on a Page</a></h1></li>
+	  <li><h1><a href="build/#rearrange" class="indicates_more">Rearrange Items on a Page</a></h1></li>
 	  <li>
 	    <ul>
-	      <li><a href="build#rearrange/panel">Via &quot;Reorder: Content&quot; panel</a></li>
+	      <li><a href="build/#rearrange/panel">Via &quot;Reorder: Content&quot; panel</a></li>
 	    </ul>
 	  </li>
 
-	  <li><h1><a href="build#available" class="indicates_more">Course Availability</a></h1></li>
+	  <li><h1><a href="build/#available" class="indicates_more">Course Availability</a></h1></li>
 
-	  <li><h1><a href="build#export" class="indicates_more">Export a Course</a></h1></li>
+	  <li><h1><a href="build/#export" class="indicates_more">Export a Course</a></h1></li>
 
 	</ul>
       </section>
       
       <section class="dialog special communicate">
-	<h1><a href="communicate#site_sub_nav/show">communicate &amp; collaborate</a></h1>
+	<h1><a href="communicate/#site_sub_nav/show">communicate &amp; collaborate</a></h1>
 	<ul>
-	  <li><h1><a href="communicate#tools_management" class="indicates_more">Tools Management</a></h1></li>
+	  <li><h1><a href="communicate/#tools_management" class="indicates_more">Tools Management</a></h1></li>
 	  <li>
 	    <ul>
-	      <li><a href="communicate#tools_management/create_links">Create links to tools</a></li>
-	      <li><a href="communicate#tools_management/make_available">Make tools available</a></li>
+	      <li><a href="communicate/#tools_management/create_links">Create links to tools</a></li>
+	      <li><a href="communicate/#tools_management/make_available">Make tools available</a></li>
 	    </ul>
 	  </li>
 
-	  <li><h1><a href="communicate#course_tools" class="indicates_more">Course Tools</a></h1></li>
+	  <li><h1><a href="communicate/#course_tools" class="indicates_more">Course Tools</a></h1></li>
 	  <li>
 	    <ul>
-	      <li><a href="communicate#course_tools/course_calendar">Course calendar</a></li>
-	      <li><a href="communicate#course_tools/discussion_board">Discussion boards</a></li>
-	      <li><a href="communicate#course_tools/self_and_peer_assessments">Self and peer assessments</a></li>
-	      <li><a href="communicate#course_tools/wikis">Wikis</a></li>
-	      <li><a href="communicate#course_tools/tasks">Tasks</a></li>
-	      <li><a href="communicate#course_tools" class="indicates_more">See more tools</a></li>
+	      <li><a href="communicate/#course_tools/course_calendar">Course calendar</a></li>
+	      <li><a href="communicate/#course_tools/discussion_board">Discussion boards</a></li>
+	      <li><a href="communicate/#course_tools/self_and_peer_assessments">Self and peer assessments</a></li>
+	      <li><a href="communicate/#course_tools/wikis">Wikis</a></li>
+	      <li><a href="communicate/#course_tools/tasks">Tasks</a></li>
+	      <li><a href="communicate/#course_tools" class="indicates_more">See more tools</a></li>
 	    </ul>
 	  </li>
 
-	  <li><h1><a href="communicate#set_up_groups" class="indicates_more">Set Up Groups</a></h1></li>
+	  <li><h1><a href="communicate/#set_up_groups" class="indicates_more">Set Up Groups</a></h1></li>
 	  <li>
 	    <ul>
-	      <li><a href="communicate#set_up_groups/create">Create a group</a></li>
+	      <li><a href="communicate/#set_up_groups/create">Create a group</a></li>
 	    </ul>
 	  </li>
 	</ul>
       </section>
       
       <section class="dialog special evaluate">
-	<h1><a href="evaluate#site_sub_nav/show">evaluate student work</a></h1>
+	<h1><a href="evaluate/#site_sub_nav/show">evaluate student work</a></h1>
 	<ul>
-	  <li><h1><a href="evaluate#assignments" class="indicates_more">Assignments</a></h1></li>
+	  <li><h1><a href="evaluate/#assignments" class="indicates_more">Assignments</a></h1></li>
 	  <li>
 	    <ul>
-	      <li><a href="evaluate#assignments/add">Add an assignment</a></li>
-	      <li><a href="evaluate#assignments/grade">Grade an assignment</a></li>
-	      <li><a href="evaluate#assignments/download">Download assignments for grading offline</a></li>
+	      <li><a href="evaluate/#assignments/add">Add an assignment</a></li>
+	      <li><a href="evaluate/#assignments/grade">Grade an assignment</a></li>
+	      <li><a href="evaluate/#assignments/download">Download assignments for grading offline</a></li>
 	    </ul>
 	  </li>
 
-	  <li><h1><a href="evaluate#manage_tests" class="indicates_more">Manage Tests &amp; Surveys</a></h1></li>
+	  <li><h1><a href="evaluate/#manage_tests" class="indicates_more">Manage Tests &amp; Surveys</a></h1></li>
 	  <li>
 	    <ul>
-	      <li><a href="evaluate#manage_tests/create">Create a new test, add questions</a></li>
+	      <li><a href="evaluate/#manage_tests/create">Create a new test, add questions</a></li>
 	    </ul>
 	  </li>
 
-	  <li><h1><a href="evaluate#deploy_tests" class="indicates_more">Administer a Test</a></h1></li>
+	  <li><h1><a href="evaluate/#deploy_tests" class="indicates_more">Administer a Test</a></h1></li>
 	  <li>
 	    <ul>
-	      <li><a href="evaluate#deploy_tests/make_available">Make a test available</a></li>
+	      <li><a href="evaluate/#deploy_tests/make_available">Make a test available</a></li>
 	    </ul>
 	  </li>
 
-	  <li><h1><a href="evaluate#grades" class="indicates_more">The Grade Center</a></h1></li>
+	  <li><h1><a href="evaluate/#grades" class="indicates_more">The Grade Center</a></h1></li>
 	  <li>
 	    <ul>
-	      <li><a href="evaluate#grades/enter">Enter and modify grades</a></li>
-	      <li><a href="evaluate#grades/offline">Download and upload grades</a></li>
-	      <li><a href="evaluate#grades/student_view_options">Manage what grades students see</a></li>
+	      <li><a href="evaluate/#grades/enter">Enter and modify grades</a></li>
+	      <li><a href="evaluate/#grades/offline">Download and upload grades</a></li>
+	      <li><a href="evaluate/#grades/student_view_options">Manage what grades students see</a></li>
 	    </ul>
 	  </li>
 	</ul>
       </section>
 
       <section class="dialog gettingstarted">
-	<h1><a href="gettingstarted#site_sub_nav/show">getting started for Students</a></h1>
+	<h1><a href="gettingstarted/#site_sub_nav/show">getting started for Students</a></h1>
 	<ul>
 	  <li>
 	    <ul>
-	      <li><a href="gettingstarted#gettingstarted/access">Access a Blackboard course</a></li>
-	      <li><a href="gettingstarted#gettingstarted/assignments">View &amp; submit assignments</a></li>
-	      <li><a href="gettingstarted#gettingstarted/grades">Check grades</a></li>
-	      <li><a href="gettingstarted#preferences">Personal preferences</a></li>
-	      <li><a href="gettingstarted#preferences/privacy">Privacy settings</a></li>
+	      <li><a href="gettingstarted/#gettingstarted/access">Access a Blackboard course</a></li>
+	      <li><a href="gettingstarted/#gettingstarted/assignments">View &amp; submit assignments</a></li>
+	      <li><a href="gettingstarted/#gettingstarted/grades">Check grades</a></li>
+	      <li><a href="gettingstarted/#preferences">Personal preferences</a></li>
+	      <li><a href="gettingstarted/#preferences/privacy">Privacy settings</a></li>
 	    </ul>
 	  </li>
 	</ul>
@@ -197,9 +202,9 @@
 	  <li><h1><a href="policies" class="indicates_more">Policies</a></h1></li>
 	  <li>
             <ul>
-              <li><a href="policies#general_use">General Use</a></li>
-              <li><a href="policies#privacy">Privacy</a></li>
-              <li><a href="policies#copyright">Copyright</a></li>
+              <li><a href="policies/#general_use">General Use</a></li>
+              <li><a href="policies/#privacy">Privacy</a></li>
+              <li><a href="policies/#copyright">Copyright</a></li>
             </ul>
 	  </li>
 
@@ -227,9 +232,14 @@
 
     </section>
 
-    <!--#include virtual="/blackboard/includes/footer.html" --> 
+    <!--#include virtual="includes/footer.html" --> 
   
-    <!--#include virtual="includes/javascript_bottom.html" -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+    <script src="js/libs/jquery.columnizer.js" type="text/javascript" charset="utf-8"></script>
+      
+    <script defer src="js/plugins.js"></script>
+    <script defer src="js/script.js"></script>
   </body>
   
 </html>

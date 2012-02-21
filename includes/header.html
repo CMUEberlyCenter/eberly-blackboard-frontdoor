@@ -1,7 +1,7 @@
 <header id="page_header">
   
-  <section id="banner">
-    <a href="http://www.cmu.edu/blackboard"><img src="images/blackboard-wordmark.png" alt="Blackboard Wordmark"/></a>
+  <section id="banner" role="banner">
+    <a href="http://www.cmu.edu/blackboard"><img src="/blackboard/images/blackboard-wordmark.png" alt="Blackboard Wordmark"/></a>
   </section>
   
   <nav id="contact_nav" role="navigation">
@@ -12,15 +12,15 @@
     </ul>
   </nav>
   
-  <section id="site_search">
+  <section id="site_search" role="search">
     <form method="get" action="http://web-search.andrew.cmu.edu/search">
       <label for="search_text">Search for Support Topics</label>
       <input type="text" name="q" size="32" id="search_text" />
       <input type="hidden" name="as_sitesearch" value="http://www.cmu.edu/blackboard"/>
       <input type="hidden" name="site" value="default_collection"/>
       <input type="hidden" name="client" value="default_frontend"/>
-      <!--<input type="hidden" name="proxystylesheet" value="default_frontend"/>-->
-      <input type="hidden" name="proxystylesheet" value="http://merichar-dev.ote.cmu.edu/blackboard/google-mit.xsl"/>
+      <input type="hidden" name="proxystylesheet" value="default_frontend"/>
+      <!--<input type="hidden" name="proxystylesheet" value="http://merichar-dev.ote.cmu.edu/blackboard/google-mit.xsl"/>-->
       
       <input type="hidden" name="output" value="xml_no_dtd"/>
       <input type="hidden" name="ie" value="UTF-8"/>
@@ -33,7 +33,7 @@
   <nav id="site_nav" role="navigation">
     <ul id="application_menu">
       <li class="login_button"><a href="https://blackboard.andrew.cmu.edu/webapps/portal/frameset.jsp" tabindex="1">Login</a></li>
-      <li class="request_course"><a href="courserequest" class="indicates_more">Request a course</a></li>
+      <li class="request_course"><a href="/blackboard/courserequest" class="indicates_more">Request a course</a></li>
     </ul>
     
     <ul id="documentation_menu">
@@ -47,45 +47,45 @@
 
   <nav id="site_sub_nav" role="navigation">
     <ul class="manage">
-      <li><h1><a href="manage#enrollment">User Enrollment in a Blackboard Course</a></h1></li>
+      <li><h1><a href="/blackboard/manage/#enrollment">User Enrollment in a Blackboard Course</a></h1></li>
       <li>
         <ul>
           <li>
-	    <a href="manage#enrollment/automatic">Automatic enrollment for instructors and enrolled students</a>
+	    <a href="/blackboard/manage/#enrollment/automatic">Automatic enrollment for instructors and enrolled students</a>
 	  </li>
-          <li><a href="manage#enrollment/manual">Enroll a TA / user</a></li>
-          <li><a href="manage#enrollment/list">List enrolled users</a></li>
-          <li><a href="manage#enrollment/search">Search for an enrolled user</a></li>
+          <li><a href="/blackboard/manage/#enrollment/manual">Enroll a TA / user</a></li>
+          <li><a href="/blackboard/manage/#enrollment/list">List enrolled users</a></li>
+          <li><a href="/blackboard/manage/#enrollment/search">Search for an enrolled user</a></li>
         </ul>
       </li>
       
-      <li><h1><a href="manage#accounts">User Accounts</a></h1></li>
+      <li><h1><a href="/blackboard/manage/#accounts">User Accounts</a></h1></li>
       <li>
         <ul>
-          <li><a href="manage#accounts/andrew">Andrew accounts</a></li>
-          <li><a href="manage#accounts/sponsored">Blackboard sponsored accounts</a></li>
+          <li><a href="/blackboard/manage/#accounts/andrew">Andrew accounts</a></li>
+          <li><a href="/blackboard/manage/#accounts/sponsored">Blackboard sponsored accounts</a></li>
         </ul>
       </li>
       
-      <li><h1><a href="manage#guests">Guest Access</a></h1></li>
+      <li><h1><a href="/blackboard/manage/#guests">Guest Access</a></h1></li>
       <li>
         <ul>
-          <li><a href="manage#guests/enroll">Enroll guests</a></li>
-          <li><a href="manage#guests/enable">Enable guest access</a></li>
+          <li><a href="/blackboard/manage/#guests/enroll">Enroll guests</a></li>
+          <li><a href="/blackboard/manage/#guests/enable">Enable guest access</a></li>
         </ul>
       </li>
 
-      <li><h1><a href="manage#roles">Roles and Affordances</a></h1></li>
+      <li><h1><a href="/blackboard/manage/#roles">Roles and Affordances</a></h1></li>
       <li>
         <ul>
-          <li><a href="manage#roles/types">Types of user roles</a></li>
-          <li><a href="manage#roles/change">Change a user's role</a></li>
+          <li><a href="/blackboard/manage/#roles/types">Types of user roles</a></li>
+          <li><a href="/blackboard/manage/#roles/change">Change a user's role</a></li>
         </ul>
       </li>
     </ul>
     
     <ul class="build">
-      <li><h1><a href="build#course_menu">Edit Mode</a></h1></li>
+      <li><h1><a href="/blackboard/build/#course_menu">Edit Mode</a></h1></li>
       <li>
         <ul>
           <li>
@@ -97,152 +97,152 @@
         </ul>
       </li>
       
-      <li><h1><a href="build#course_menu">The Course Menu</a></h1></li>
+      <li><h1><a href="/blackboard/build/#course_menu">The Course Menu</a></h1></li>
       <li>
         <ul>
-          <li><a href="build#course_menu/layout">Course menu layout</a></li>
-          <li><a href="build#course_menu/default">Default course menu</a></li>
-          <li><a href="build#course_menu/change">Change the course menu</a></li>
+          <li><a href="/blackboard/build/#course_menu/layout">Course menu layout</a></li>
+          <li><a href="/blackboard/build/#course_menu/default">Default course menu</a></li>
+          <li><a href="/blackboard/build/#course_menu/change">Change the course menu</a></li>
         </ul>
       </li>
       
-      <li><h1><a href="build#content_areas">Content Areas &amp; Pages</a></h1></li>
+      <li><h1><a href="/blackboard/build/#content_areas">Content Areas &amp; Pages</a></h1></li>
       <li>
         <ul>
-          <li><a href="build#content_areas/area">Add a content area</a></li>
-          <li><a href="build#content_areas/page">Add a blank page</a></li>
-          <li><a href="build#content_areas/module">Create &amp; insert a module page</a></li>
+          <li><a href="/blackboard/build/#content_areas/area">Add a content area</a></li>
+          <li><a href="/blackboard/build/#content_areas/page">Add a blank page</a></li>
+          <li><a href="/blackboard/build/#content_areas/module">Create &amp; insert a module page</a></li>
         </ul>
       </li>
       
-      <li><h1><a href="build#add_content">Add Content</a></h1></li>
+      <li><h1><a href="/blackboard/build/#add_content">Add Content</a></h1></li>
       <li>
         <ul>
-          <li><a href="build#add_content/item">Items</a></li>
-          <li><a href="build#add_content/folder">Folders</a></li>
-          <li><a href="build#add_content/course_link">Course links</a></li>
-          <li><a href="build#add_content/external_link">External links</a></li>
-          <li><a href="build#add_content/module">Learning modules</a></li>
-          <li><a href="build#add_content/sullabus">Syllabi</a></li>
+          <li><a href="/blackboard/build/#add_content/item">Items</a></li>
+          <li><a href="/blackboard/build/#add_content/folder">Folders</a></li>
+          <li><a href="/blackboard/build/#add_content/course_link">Course links</a></li>
+          <li><a href="/blackboard/build/#add_content/external_link">External links</a></li>
+          <li><a href="/blackboard/build/#add_content/module">Learning modules</a></li>
+          <li><a href="/blackboard/build/#add_content/sullabus">Syllabi</a></li>
         </ul>
       </li>
 
-      <li><h1><a href="build#rearrange">Rearrange Items on a Page</a></h1></li>
+      <li><h1><a href="/blackboard/build/#rearrange">Rearrange Items on a Page</a></h1></li>
       <li>
         <ul>
-          <li><a href="build#rearrange/drag_and_drop">Via drag &amp; drop</a></li>
-          <li><a href="build#rearrange/panel">Via &quot;Reorder: Content&quot; panel</a></li>
+          <li><a href="/blackboard/build/#rearrange/drag_and_drop">Via drag &amp; drop</a></li>
+          <li><a href="/blackboard/build/#rearrange/panel">Via &quot;Reorder: Content&quot; panel</a></li>
         </ul>
       </li>
 
-      <li><h1><a href="build#available">Course Availability</a></h1></li>
+      <li><h1><a href="/blackboard/build/#available">Course Availability</a></h1></li>
       <li>
         <ul>
-          <li><a href="build#available/make">Make a course available to students</a></li>
+          <li><a href="/blackboard/build/#available/make">Make a course available to students</a></li>
 	</ul>
       </li>
 
-      <li><h1><a href="build#export">Export a Course</a></h1></li>
+      <li><h1><a href="/blackboard/build/#export">Export a Course</a></h1></li>
       <li>
         <ul>
-          <li><a href="build#export/export_course">How to Export/Archive a Course</a></li>
+          <li><a href="/blackboard/build/#export/export_course">How to Export/Archive a Course</a></li>
 	</ul>
       </li>
     </ul>
     
     <ul class="communicate">
-      <li><h1><a href="communicate#tools_management">Tools Management</a></h1></li>
+      <li><h1><a href="/blackboard/communicate/#tools_management">Tools Management</a></h1></li>
       <li>
         <ul>
-          <li><a href="communicate#tools_management/create_links">Create links to tools</a></li>
-          <li><a href="communicate#tools_management/make_available">Make tools available</a></li>
+          <li><a href="/blackboard/communicate/#tools_management/create_links">Create links to tools</a></li>
+          <li><a href="/blackboard/communicate/#tools_management/make_available">Make tools available</a></li>
         </ul>
       </li>
 
-      <li><h1><a href="communicate#course_tools">Course Tools e.g.:</a></h1></li>
+      <li><h1><a href="/blackboard/communicate/#course_tools">Course Tools e.g.:</a></h1></li>
       <li>
         <ul>
-	  <li><a href="communicate#course_tools/course_calendar">Course calendar</a></li>
-	  <li><a href="communicate#course_tools/discussion_board">Discussion boards</a></li>
-	  <li><a href="communicate#course_tools/self_and_peer_assessments">Self and peer assessments</a></li>
-	  <li><a href="communicate#course_tools/wikis">Wikis</a></li>
-	  <li><a href="communicate#course_tools/tasks">Tasks</a></li>
+	  <li><a href="/blackboard/communicate/#course_tools/course_calendar">Course calendar</a></li>
+	  <li><a href="/blackboard/communicate/#course_tools/discussion_board">Discussion boards</a></li>
+	  <li><a href="/blackboard/communicate/#course_tools/self_and_peer_assessments">Self and peer assessments</a></li>
+	  <li><a href="/blackboard/communicate/#course_tools/wikis">Wikis</a></li>
+	  <li><a href="/blackboard/communicate/#course_tools/tasks">Tasks</a></li>
         </ul>
       </li>
 
-      <li><h1><a href="communicate#set_up_groups">Set Up Groups</a></h1>
+      <li><h1><a href="/blackboard/communicate/#set_up_groups">Set Up Groups</a></h1>
       <li>
         <ul>
-          <li><a href="communicate#set_up_groups/create">Create a group</a></li>
-          <li><a href="communicate#set_up_groups/edit_or_delete">Edit or delete a group</a></li>
-          <li><a href="communicate#set_up_groups/email_group_members">Email group members</a></li>
+          <li><a href="/blackboard/communicate/#set_up_groups/create">Create a group</a></li>
+          <li><a href="/blackboard/communicate/#set_up_groups/edit_or_delete">Edit or delete a group</a></li>
+          <li><a href="/blackboard/communicate/#set_up_groups/email_group_members">Email group members</a></li>
         </ul>
       </li>
     </ul>
     
     <ul class="evaluate">
-      <li><h1><a href="evaluate#assignments">Assignments</a></h1></li>
+      <li><h1><a href="/blackboard/evaluate/#assignments">Assignments</a></h1></li>
       <li>
         <ul>
-          <li><a href="evaluate#assignments/add">Add an assignment</a></li>
-          <li><a href="evaluate#assignments/submit">Student submission process</a></li>
-          <li><a href="evaluate#assignments/turnitin">Add a Turnitin assignment</a></li>
-          <li><a href="evaluate#assignments/submit_turnitin">Student submission process for Turnitin assignments</a></li>
-          <li><a href="evaluate#assignments/grade">Grade an assignment</a></li>
-          <li><a href="evaluate#assignments/download">Download assignments for grading offline</a></li>
+          <li><a href="/blackboard/evaluate/#assignments/add">Add an assignment</a></li>
+          <li><a href="/blackboard/evaluate/#assignments/submit">Student submission process</a></li>
+          <li><a href="/blackboard/evaluate/#assignments/turnitin">Add a Turnitin assignment</a></li>
+          <li><a href="/blackboard/evaluate/#assignments/submit_turnitin">Student submission process for Turnitin assignments</a></li>
+          <li><a href="/blackboard/evaluate/#assignments/grade">Grade an assignment</a></li>
+          <li><a href="/blackboard/evaluate/#assignments/download">Download assignments for grading offline</a></li>
         </ul>
       </li>
       
-      <li><h1><a href="evaluate#manage_tests">Manage Tests &amp; Surveys</a></h1></li>
+      <li><h1><a href="/blackboard/evaluate/#manage_tests">Manage Tests &amp; Surveys</a></h1></li>
       <li>
         <ul>
-          <li><a href="evaluate#manage_tests/create">Create a new test</a></li>
-          <li><a href="evaluate#manage_tests/add">Add questions to a test</a></li>
-          <li><a href="evaluate#manage_tests/import_questions">Create test questions offline</a></li>
-          <li><a href="evaluate#manage_tests/manage">Manage existing tests</a></li>
-          <li><a href="evaluate#manage_tests/import">Import a test</a></li>
+          <li><a href="/blackboard/evaluate/#manage_tests/create">Create a new test</a></li>
+          <li><a href="/blackboard/evaluate/#manage_tests/add">Add questions to a test</a></li>
+          <li><a href="/blackboard/evaluate/#manage_tests/import_questions">Create test questions offline</a></li>
+          <li><a href="/blackboard/evaluate/#manage_tests/manage">Manage existing tests</a></li>
+          <li><a href="/blackboard/evaluate/#manage_tests/import">Import a test</a></li>
         </ul>
       </li>
 
-      <li><h1><a href="evaluate#deploy_tests">Administer a Test</a></h1></li>
+      <li><h1><a href="/blackboard/evaluate/#deploy_tests">Administer a Test</a></h1></li>
       <li>
         <ul>
-          <li><a href="evaluate#deploy_tests/deploy">Deploy a test</a></li>
-          <li><a href="evaluate#deploy_tests/make_available">Make a test available</a></li>
+          <li><a href="/blackboard/evaluate/#deploy_tests/deploy">Deploy a test</a></li>
+          <li><a href="/blackboard/evaluate/#deploy_tests/make_available">Make a test available</a></li>
 	</ul>
       </li>
       
-      <li><h1><a href="evaluate#grades">The Grade Center</a></h1></li>
+      <li><h1><a href="/blackboard/evaluate/#grades">The Grade Center</a></h1></li>
       <li>
         <ul>
-          <li><a href="evaluate#grades/enter">Enter and modify grades</a></li>
-          <li><a href="evaluate#grades/offline">Download and upload grades</a></li>
-          <li><a href="evaluate#grades/view_options">Change the Grade Center view</a></li>
-          <li><a href="evaluate#grades/student_view_options">Manage the student grade view (My Grades)</a></li>
-	  <li><a href="evaluate#grades/course_tools">Grade entries made within course tools</a></li>
+          <li><a href="/blackboard/evaluate/#grades/enter">Enter and modify grades</a></li>
+          <li><a href="/blackboard/evaluate/#grades/offline">Download and upload grades</a></li>
+          <li><a href="/blackboard/evaluate/#grades/view_options">Change the Grade Center view</a></li>
+          <li><a href="/blackboard/evaluate/#grades/student_view_options">Manage the student grade view (My Grades)</a></li>
+	  <li><a href="/blackboard/evaluate/#grades/course_tools">Grade entries made within course tools</a></li>
         </ul>
       </li>
     </ul>
     
     <ul class="gettingstarted">
-      <li><h1><a href="gettingstarted#gettingstarted">Getting Started</a></h1></li>
+      <li><h1><a href="/blackboard/gettingstarted/#gettingstarted">Getting Started</a></h1></li>
       <li>
         <ul>
-          <li><a href="gettingstarted#gettingstarted/access">Access a Blackboard course</a></li>
-	  <li><a href="gettingstarted#gettingstarted/navigate">Course navigation</a></li>
-          <li><a href="gettingstarted#gettingstarted/communicate">Communication tools</a></li>
-	  <li><a href="gettingstarted#gettingstarted/assignments">View &amp; submit assignments</a></li>
-	  <li><a href="gettingstarted#gettingstarted/turnitin_assignments">Submit Turnitin assignments</a></li>
-          <li><a href="gettingstarted#gettingstarted/grades">Check grades</a></li>
+          <li><a href="/blackboard/gettingstarted/#gettingstarted/access">Access a Blackboard course</a></li>
+	  <li><a href="/blackboard/gettingstarted/#gettingstarted/navigate">Course navigation</a></li>
+          <li><a href="/blackboard/gettingstarted/#gettingstarted/communicate">Communication tools</a></li>
+	  <li><a href="/blackboard/gettingstarted/#gettingstarted/assignments">View &amp; submit assignments</a></li>
+	  <li><a href="/blackboard/gettingstarted/#gettingstarted/turnitin_assignments">Submit Turnitin assignments</a></li>
+          <li><a href="/blackboard/gettingstarted/#gettingstarted/grades">Check grades</a></li>
         </ul>
       </li>
 
-      <li><h1><a href="gettingstarted#preferences">Personal Preferences</a></h1></li>
+      <li><h1><a href="/blackboard/gettingstarted/#preferences">Personal Preferences</a></h1></li>
       <li>
 	<ul>
-	  <li><a href="gettingstarted#preferences/info">Personal information</a></li>
-	  <li><a href="gettingstarted#preferences/privacy">Privacy Settings</a></li>
-	  <li><a href="gettingstarted#preferences/language">Change language</a></li>
+	  <li><a href="/blackboard/gettingstarted/#preferences/info">Personal information</a></li>
+	  <li><a href="/blackboard/gettingstarted/#preferences/privacy">Privacy Settings</a></li>
+	  <li><a href="/blackboard/gettingstarted/#preferences/language">Change language</a></li>
 	</ul>
       </li>
 

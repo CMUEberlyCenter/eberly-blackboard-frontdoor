@@ -14,41 +14,41 @@
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <!--#include virtual="includes/style.html" -->
-    <!--#include virtual="includes/javascript_head.html" -->
+    <!--#include virtual="../includes/style.html" -->
+    <!--#include virtual="../includes/javascript_head.html" -->
   </head>
 
   <body>
     
-    <!--#include virtual="includes/header.html" --> 
+    <!--#include virtual="../includes/header.html" --> 
 
     
     <section id="breadcrumbs" role="navigation">
       <ul>
-	<li><a href="./">Home</a></li>
-	<li><a href="policies">Policies &amp; Guidelines</a></li>
+	<li><a href="http://www.cmu.edu/blackboard">Home</a></li>
+	<li><a href="../policies">Policies &amp; Guidelines</a></li>
       </ul>
     </section>
 
-    <section id="content" class="policies">
+    <section id="content" role="main" class="policies">
       <h1>Policies &amp; Guidelines</h1>
 
-      <!--#include virtual="includes/policies/overview.html" -->
+      <!--#include virtual="../includes/policies/overview.html" -->
       
-      <!--#include virtual="includes/policies/general_use.html" -->
+      <!--#include virtual="../includes/policies/general_use.html" -->
 
-      <!--#include virtual="includes/policies/acceptable_use.html" -->
+      <!--#include virtual="../includes/policies/acceptable_use.html" -->
 
-      <!--#include virtual="includes/policies/privacy.html" -->
+      <!--#include virtual="../includes/policies/privacy.html" -->
 
-      <!--#include virtual="includes/policies/copyright.html" -->
+      <!--#include virtual="../includes/policies/copyright.html" -->
 
-      <!--#include virtual="includes/policies/intellectual_property.html" -->
+      <!--#include virtual="../includes/policies/intellectual_property.html" -->
     </section>
 
-    <!--#include virtual="includes/footer.html" --> 
+    <!--#include virtual="../includes/footer.html" --> 
     
-    <!--#include virtual="includes/javascript_bottom.html" -->
+    <!--#include virtual="../includes/javascript_bottom.html" -->
   </body>
   
 </html>

@@ -14,8 +14,13 @@
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <!--#include virtual="includes/style.html" -->
-    <!--#include virtual="includes/javascript_head.html" -->
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/blackboard.css">
+    <noscript>
+      <link rel="stylesheet" href="css/legacy.css">
+    </noscript>
+    
+    <script src="js/libs/modernizr-2.0.6.min.js"></script>
   </head>
 
   <body>
@@ -25,12 +30,12 @@
     
     <section id="breadcrumbs" role="navigation">
       <ul>
-	<li><a href="./">Home</a></li>
-	<li><a href="rotating_tips">Rotating Tips</a></li>
+	<li><a href="http://www.cmu.edu/blackboard">Home</a></li>
+	<li><a href="../rotatingtips">Rotating Tips</a></li>
       </ul>
     </section>
 
-    <section id="content" class="no_content_traversal">
+    <section id="content" role="main" class="no_content_traversal">
       <h1>Rotating Tips</h1>
       
       <!--#include virtual="includes/rotating_tips.html" -->
@@ -38,7 +43,12 @@
 
     <!--#include virtual="includes/footer.html" --> 
     
-    <!--#include virtual="includes/javascript_bottom.html" -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+    <script src="js/libs/jquery.columnizer.js" type="text/javascript" charset="utf-8"></script>
+      
+    <script defer src="js/plugins.js"></script>
+    <script defer src="js/script.js"></script>
   </body>
   
 </html>

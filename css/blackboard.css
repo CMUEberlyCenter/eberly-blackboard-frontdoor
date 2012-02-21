@@ -160,15 +160,47 @@ ul#documentation_menu > li > a.active:after { border-color: transparent transpar
 #site_sub_nav > ul > .close_button a:focus { outline: none; }
 
 /* ==|== home page content styles =========================================== */
-#announcements { background: #fff18a; border: 1px solid #f4d706; clear: both; color: #686e71; display: none; margin: 0 0 18px 0; padding: 5px; }
-#announcements > h1 { border-right: 1px solid #f4d706; color: #231f20; float: left; font: 18px "Open Sans",sans-serif; margin: 0 18px 0 0; padding: 12px 9px; width: 276px; }
-#announcements > p { margin: 0 0 0 320px; padding: 0; }
+#announcements { background: #d8e7f3; border: 1px solid #88a5a1; clear: both; color: #686e71; display: none; margin: 0 0 18px 0; padding: 5px; }
+#announcements.alert { background: #fff18a; border-color: #f4d706; }
+#announcements > h1 { border-right: 1px solid #88a5a1; color: #231f20; float: left; font: 18px "Open Sans",sans-serif; margin: 0 18px 0 0; padding: 12px 9px; width: 276px; }
+#announcements.alert > h1 { border-color: #f4d706; }
+#announcements > p { margin-left: 320px; padding: 0; }
+#announcements > p a { color: #231f20; }
+#announcements > p a:hover { color: #686e71; }
 
 #dashboard { clear: both; }
 #dashboard a { display: block; text-decoration: none; }
 #dashboard ul { list-style-type: none; margin: 0; padding: 0; }
 
-#rotating_tips { border: 1px solid #939598; float: right; height: 218px; width: 622px; }
+#rotating_tips { background: #ffffff; border: 1px solid #939598; float: right; height: 218px; padding: 0 70px; width: 482px; }
+#rotating_tips > div { padding: 15px; position: static; height: 188px; overflow: hidden;}
+#rotating_tips > div h1 { font: 300 24px "Open Sans",sans-serif; margin-bottom: 10px; }
+#rotating_tips > div p { margin-bottom: 10px; }
+#rotating_tips > div a { color: #231f20;  text-decoration: underline; }
+#rotating_tips > div ol,
+#rotating_tips > div ul { list-style-type: disc; margin: 0 0 10px 20px; }
+#rotating_tips > div img { position: relative; transition: bottom .5s, left .5s, right .5s; -moz-transition: bottom .5s, left .5s, right .5s; -o-transition: bottom .5s, left .5s, right .5s; -webkit-transition: bottom .5s, left .5s, right .5s; }
+#rotating_tips > div img.b { bottom: 0; }
+#rotating_tips > div img.b:hover { bottom: 5px; }
+#rotating_tips > div img.bl { bottom: 0; float: left; left: -20px; }
+#rotating_tips > div img.bl:hover { bottom: 5px; left: -15px; }
+#rotating_tips > div img.br { bottom: 0; float: right; right: -20px; }
+#rotating_tips > div img.br:hover { bottom: 5px; right: -15px; }
+#rotating_tips > div * { margin: 0; padding: 0; }
+#rotating_tips > div.new:after { background: url('../images/banner.png') no-repeat; color: #ffffff; content: 'New!'; font: bold 18px "Open Sans",sans-serif; height: 35px; padding-top: 15px; position: absolute; right: 32px; text-align: center; top: 2px; width: 132px; -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); -webkit-transform: rotate(45deg); }
+
+.jshowoff.rotating_tips { float: right; height: 220px; overflow: hidden; width: 624px; }
+#rotating_tips + .jshowoff-controls { margin: 0; position: absolute; width: 100%;}
+#rotating_tips + .jshowoff-controls > a.jshowoff-play { display: none; }
+#rotating_tips + .jshowoff-controls > a.jshowoff-next,
+#rotating_tips + .jshowoff-controls > a.jshowoff-prev {  background: #939598 no-repeat; height: 220px; line-height: 220px; margin: 0; padding: 0 15px; position: absolute; transition: background .5s; vertical-align: middle; width: 40px; -moz-transition: background .5s; -o-transition: background .5s; -webkit-transition: background .5s; }
+#rotating_tips + .jshowoff-controls > a.jshowoff-next:hover,
+#rotating_tips + .jshowoff-controls > a.jshowoff-prev:hover { background: #686868; }
+
+#rotating_tips + .jshowoff-controls > a.jshowoff-next { right: 0; }
+#rotating_tips + .jshowoff-controls > a.jshowoff-prev { left: 0; }
+
+
 
 #dashboard > .dialog { border: 1px solid; float: left; margin: 0 18px 18px 0; min-height: 387px; width: 300px; }
 #dashboard > .dialog.special { background-color: #ffffff; }
@@ -228,14 +260,14 @@ ul#documentation_menu > li > a.active:after { border-color: transparent transpar
 
 
 /* ==|== inner page content styles ========================================== */
-#content { background: #ffffff; border-style: solid; border-width: 1px; padding: 20px; }
+#content { background: #ffffff; border: 1px solid #a39d95; padding: 20px; }
 #content.manage          { border-color: #a39d95; }
 #content.build           { border-color: #91bc1b; }
 #content.communicate     { border-color: #7fb5bf; }
 #content.evaluate        { border-color: #ea7754; }
 #content.getting_started { border-color: #f78426; }
 
-#content > h1 { font: bold 21px Arial,sans-serif; margin: 0; padding: 0; }
+#content > h1 { color: #a39d95; font: bold 21px Arial,sans-serif; margin: 0; padding: 0; }
 #content.manage > h1          { color: #a39d95; }
 #content.build > h1           { color: #91bc1b; }
 #content.communicate > h1     { color: #7fb5bf; }
@@ -249,7 +281,13 @@ ul#documentation_menu > li > a.active:after { border-color: transparent transpar
 #content > article > h2 { color: #c81729; font: bold 16px Georgia,serif; margin: 0 0 10px 240px; padding: 0; }
 #content > article > h3 { color: #808285; font: bold 14px Georgia,serif; margin: 0 0 10px 240px; padding: 0; }
 #content > article > h4 { color: #808285; font: 12px Georgia,serif; margin: 0 0 10px 240px; padding: 0; }
-#content > article > .article_sidebar { float: left; margin-left: 0; width: 240px; }
+#content > article > .article_sidebar { float: left; margin: 30px 0 0 0; width: 230px; }
+#content > article > .article_sidebar > h1 {  color: #808285; font: bold 14px Arial,sans-serif; padding: 0; }
+#content > article > .article_sidebar ul { border-bottom: 1px solid #d6d3cf; border-top: 1px solid #d6d3cf; list-style-type: none; margin: 0; padding: 5px 0; }
+#content > article.faq > h2 { border-top: 1px solid #d6d3cf; padding-top: 10px; }
+#content > article.faq > .article_sidebar { margin-top: 69px; }
+#content > article.faq > .article_sidebar > ul.questions > li { margin-bottom: 10px; }
+#content > article.faq > .article_sidebar > ul.questions a { font-weight: bold; text-decoration: none; }
 
 #content > article ul > li,
 #content > article ol > li { padding: 3px 0; }

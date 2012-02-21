@@ -27,6 +27,12 @@ function prepare_dashboard() {
 
     // Display the Additional Support Topics section in columns
     columnize_additional_support_topics();
+
+    // Display 
+    $('#rotating_tips').jshowoff({ changeSpeed : 400, cssClass : 'rotating_tips', effect : 'fade', hoverPause : true, links : false, speed : 8000 });
+    
+    $('.jshowoff-prev').html('<img src="images/elements/left-arrow.gif" alt="Previous Tip" />');
+    $('.jshowoff-next').html('<img src="images/elements/right-arrow.gif" alt="Next Tip" />');
     
     $('#announcements').slideDown('slow'); // Show announcements in dashboard
 
@@ -36,7 +42,7 @@ function prepare_dashboard() {
     function columnize_additional_support_topics() {
 	$('#additional_topics > ul > li > h1').addClass('dontend');
 	$('#additional_topics > ul > li > ul > li').addClass('dontend');
-	$('#additional_topics > ul').columnize({ columns : 3 });
+	$('#additional_topics > ul').columnize({ columns : 4 });
     }
 }
 
@@ -51,7 +57,16 @@ function prepare_content() {
     var should_show_site_sub_nav = window.location.hash == '#site_sub_nav/show' ? true : false;
     
     prepare_documentation_menu();
-    prepare_content_traversal();
+    
+    /* Some content doesn't need article traversal, but should still get the
+       link to the top of a page of long content 
+    */
+    if( $('#content').hasClass("no_content_traversal") ) {
+	prepare_to_top_link();
+    }
+    else {
+	prepare_content_traversal();
+    }
 
     /* Transition effects from an immediately shown site_sub_nav (e.g. 
        fading out the body) will not affect content rendered after the call to
@@ -124,15 +139,7 @@ function prepare_content_traversal() {
     // Display the article
     show_section_article( article, window.location.hash );
 
-    // Add a return to top button for long content
-    $().UItoTop({ containerID: 'content_top_link',
-		  containerHoverID: 'content_top_link_hover', 
-		  easingType: 'easeOutQuart' 
-		});
-    $(window).bind('resize.adjust_top_link_position', function() {
-	$('#content_top_link').css({ 'left' : $('#content').position().left + 10 });
-    });
-    $(window).trigger('resize.adjust_top_link_position');
+    prepare_to_top_link();
 	
     // Draw the content navigation links for article traversal
     $('#content').after('\
@@ -256,6 +263,21 @@ function prepare_content_traversal() {
 	}
 	
     }
+}
+
+
+/**
+ * Adds a link to return to the top of a page for long content.
+ */
+function prepare_to_top_link() {
+    $().UItoTop({ containerID: 'content_top_link',
+		  containerHoverID: 'content_top_link_hover', 
+		  easingType: 'easeOutQuart' 
+		});
+    $(window).bind('resize.adjust_top_link_position', function() {
+	$('#content_top_link').css({ 'left' : $('#content').position().left + 10 });
+    });
+    $(window).trigger('resize.adjust_top_link_position');
 }
 
 

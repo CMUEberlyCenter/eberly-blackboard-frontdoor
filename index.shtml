@@ -22,20 +22,12 @@
     
     <!--#include virtual="/blackboard/includes/header.html" --> 
 
-    <section id="announcements">
-      <h1>Blackboard Downtime Alert!</h1>
-      <p>
-        Blackboard will be unavailable from<br/>
-	<strong>Tueday, January 3 at 8:00am</strong> until 
-	<strong>Wednesday, January 4 at 8:00am</strong> (EST)<br/>
-	for necessary system maintenance.
-      </p>
-    </section>
+    <!--#include virtual="/blackboard/includes/announcements.html" -->
 
     <section id="dashboard">
 
       <section id="rotating_tips">
-	rotating tips
+	<!--#include virtual="/blackboard/includes/rotating_tips.html" -->
       </section>
       
       <section class="dialog manage">
@@ -87,11 +79,9 @@
 	  </li>
 
 	  <li><h1><a href="build#available" class="indicates_more">Course Availability</a></h1></li>
-	  <li>
-	    <ul>
-	      <li><a href="build#available/make">Make a course available to students</a></li>
-	    </ul>
-	  </li>
+
+	  <li><h1><a href="build#export" class="indicates_more">Export a Course</a></h1></li>
+
 	</ul>
       </section>
       
@@ -170,12 +160,21 @@
       <section id="additional_topics">
 	<h1>Additional Support Topics</h1>
 	<ul>
-	  <li><h1><a href="#" class="indicates_more">Policies</a></h1></li>
+	  <li><h1>Blackboard 9.1</h1></li>
+	  <li>
+	    <ul>
+	      <li><a href="whats_new">What's New</a></li>
+	      <li><a href="faq">FAQ</a></li>
+	      <li><a href="bugs">Bugs &amp; Issues</a></li>
+	    </ul>
+	  </li>
+
+	  <li><h1><a href="policies" class="indicates_more">Policies</a></h1></li>
 	  <li>
             <ul>
-              <li><a href="#">General Use</a></li>
-              <li><a href="#">Privacy</a></li>
-              <li><a href="#">Copyright</a></li>
+              <li><a href="policies#general_use">General Use</a></li>
+              <li><a href="policies#privacy">Privacy</a></li>
+              <li><a href="policies#copyright">Copyright</a></li>
             </ul>
 	  </li>
 

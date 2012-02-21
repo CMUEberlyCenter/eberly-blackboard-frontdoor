@@ -35,7 +35,9 @@
 
       <!--#include virtual="includes/evaluate/assignments.html" -->
 
-      <!--#include virtual="includes/evaluate/tests.html" -->
+      <!--#include virtual="includes/evaluate/manage_tests.html" -->
+
+      <!--#include virtual="includes/evaluate/deploy_tests.html" -->
       
       <!--#include virtual="includes/evaluate/grades.html" -->
     </section>

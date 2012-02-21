@@ -33,11 +33,11 @@
     <section id="content" class="communicate">
       <h1>Communicate &amp; Collaborate</h1>
       
-      <!--#include virtual="includes/communicate/set_up_groups.html" -->
+      <!--#include virtual="includes/communicate/tools_management.html" -->
       
       <!--#include virtual="includes/communicate/course_tools.html" -->
-      
-      <!--#include virtual="includes/communicate/tools_management.html" -->
+
+      <!--#include virtual="includes/communicate/set_up_groups.html" -->
     </section>
 
     <!--#include virtual="includes/footer.html" --> 

@@ -28,9 +28,12 @@ function prepare_dashboard() {
     // Display the Additional Support Topics section in columns
     columnize_additional_support_topics();
 
-    // Display 
-    $('#rotating_tips').jshowoff({ changeSpeed : 400, cssClass : 'rotating_tips', effect : 'fade', hoverPause : true, links : false, speed : 8000 });
-    
+    // Make the rotating tips cycle through
+    $('#rotating_tips').jshowoff({ changeSpeed : 400, 
+				   cssClass : 'rotating_tips', 
+				   effect : 'fade', 
+				   links : false, 
+				   speed : 8000 });
     $('.jshowoff-prev').html('<img src="images/elements/left-arrow.gif" alt="Previous Tip" />');
     $('.jshowoff-next').html('<img src="images/elements/right-arrow.gif" alt="Next Tip" />');
     
@@ -41,7 +44,6 @@ function prepare_dashboard() {
      */
     function columnize_additional_support_topics() {
 	$('#additional_topics > ul > li > h1').addClass('dontend');
-	$('#additional_topics > ul > li > ul > li').addClass('dontend');
 	$('#additional_topics > ul').columnize({ columns : 4 });
     }
 }
@@ -65,7 +67,7 @@ function prepare_content() {
 	prepare_to_top_link();
     }
     else {
-	prepare_content_traversal();
+	prepare_content_traversal(); // calls prepare_to_top_link internally
     }
 
     /* Transition effects from an immediately shown site_sub_nav (e.g. 
@@ -118,7 +120,6 @@ function prepare_content_traversal() {
 	
 	// Article will be the default (first) available
 	article = $('#content > article').first().attr('id');
-	full_path = article;
 	
 	/* For site_sub_nav, remove the placeholder anchor and replace it with
 	   a value. It must be another anchor to prevent the page reloading and
@@ -135,10 +136,6 @@ function prepare_content_traversal() {
 	article = $.url( window.location ).fsegment(1);
     }
     
-
-    // Display the article
-    show_section_article( article, window.location.hash );
-
     prepare_to_top_link();
 	
     // Draw the content navigation links for article traversal
@@ -150,9 +147,15 @@ function prepare_content_traversal() {
         </ul>\
       </nav>\
     ');
-    set_content_nav_state();
-    populate_article_breadcrumbs();
+
+    // Display the article
+    show_section_article( article );
     
+    /* Configure hashchange behavior to switch to the new article */
+    $(window).bind('hashchange', function(event) {
+	show_section_article( $.url( window.location ).fsegment(1) )
+    });
+
     /* Configure click behavior for navigation links. Delegating the event
        instead of binding it directly alters the propagation order and allows
        the handlers directly bound to links to take priority and prevent
@@ -161,14 +164,9 @@ function prepare_content_traversal() {
     $('#content_nav').on('click', 'a', function(event) {
 	event.preventDefault();
 
-	// Kill all animations of content nav links fading and scrolling to top
-	$(this).stop( true, true );
-	$('html, body').stop( true, true );
-	$('#content_top_link').stop( true, true );
-
 	// Change to the next article
 	var direction = $(this).is('.previous') ? 'previous' : 'next';
-	$('html, body').animate( {scrollTop:0}, 1200, 'easeOutQuart', do_article_transition( direction ) );
+	do_article_transition( direction );
     });
 
     // Configure keypress-based navigation behavior
@@ -177,6 +175,78 @@ function prepare_content_traversal() {
     $(document).bind('keyup.keypress_nav', function(event) { do_keypress_navigation(event); });
     $('input').focusin( function() { $(document).unbind('.keypress_nav'); });
     $('input').focusout( function(event) { $(document).bind('keyup.keypress_nav', function(event) { do_keypress_navigation(event); }) });
+
+    /**
+     * Displays the correct article for a section based on the parameter.
+     * Navigates to the top for a generic article or to a subsection based
+     * on the URL. Updates the content navigation link states (enabled or
+     * disabled) and then updates the page's breadcrumbs.
+     * @param {string} article The article to display
+     */
+    function show_section_article( article ) {
+
+	// Explicitly show the article to be displayed and hide all others
+	$('#content > article').hide();
+	$('#content > article#' + article).show();
+
+	// Scroll to the specific section if one is given, else go to the top
+	if( $.url( window.location ).fsegment().length > 1 ) {
+	    location.href = document.location;
+	}
+	else {
+	    $('html, body').stop(true,true);
+	    $('html, body').animate( {scrollTop:0}, 'slow', 'easeOutQuart'); 
+	}
+	set_content_nav_state();
+	populate_article_breadcrumbs();
+
+	/**
+	 * Disables or enables links within the content navigation.
+	 */
+	function set_content_nav_state() {
+	    $('#content_nav a').stop( true, true );
+	    
+	    var article = $('#content > article:visible');
+	    if( !$(article).prev('article').length ) {
+		$('#content_nav a.previous').fadeTo('slow', .5);
+		$('#content_nav a.previous').on('click.disable_previous', false);
+	    }
+	    else {
+		$('#content_nav a.previous').fadeTo('fast', 1);
+		$('#content_nav a.previous').off('.disable_previous');
+	    }
+	    if( !$(article).next('article').length ) {
+		$('#content_nav a.next').fadeTo('slow', .5);
+		$('#content_nav a.next').on('click.disable_next', false);
+	    }
+	    else {
+		$('#content_nav a.next').fadeTo('fast', 1);
+		$('#content_nav a.next').off('.disable_next');
+	    }
+	}
+	
+	/**
+	 * Sets the navigation breadcrumbs based on the visible article
+	 * and its header.
+	 */
+	function populate_article_breadcrumbs() {
+	    
+	    // The breadcrumb text is the first h1 inside the article
+	    var article_heading = $('#content > article:visible > h1:first').text();
+	    if( article_heading != '' ) {
+		var article_id = $('#content > article:visible').attr('id');
+		
+		if( $('#breadcrumbs > ul').has('.article').length ) {
+		    $('#breadcrumbs > ul > li > a.article').attr('href', article_id);
+		    $('#breadcrumbs > ul > li > a.article').html( article_heading );
+		}
+		else {
+		    var breadcrumb = '<li><a class="article" href="#'+article_id+'">' + article_heading + '</a></li>';
+		    $('#breadcrumbs > ul').append( breadcrumb );
+		}
+	    }
+	}
+    }
 
     /**
      * Handle keypress-based navigation behavior.
@@ -198,51 +268,6 @@ function prepare_content_traversal() {
     }
 
     /**
-     * Disables or enables links within the content navigation.
-     */
-    function set_content_nav_state() {
-	var article = $('#content > article:visible');
-	if( !$(article).prev('article').length ) {
-	    $('#content_nav a.previous').fadeTo('slow', .5);
-	    $('#content_nav a.previous').on('click.disable_previous', false);
-	}
-	else {
-	    $('#content_nav a.previous').fadeTo('fast', 1);
-	    $('#content_nav a.previous').off('.disable_previous');
-	}
-	if( !$(article).next('article').length ) {
-	    $('#content_nav a.next').fadeTo('slow', .5);
-	    $('#content_nav a.next').on('click.disable_next', false);
-	}
-	else {
-	    $('#content_nav a.next').fadeTo('fast', 1);
-	    $('#content_nav a.next').off('.disable_next');
-	}
-    }
-
-    /**
-     * Sets the navigation breadcrumbs based on the visible article
-     * and its header.
-     */
-    function populate_article_breadcrumbs() {
-
-	// The breadcrumb text is the first h1 inside the article
-	var article_heading = $('#content > article:visible > h1:first').text();
-	if( article_heading != '' ) {
-	    var article_id = $('#content > article:visible').attr('id');
-
-	    if( $('#breadcrumbs > ul').has('.article').length ) {
-		$('#breadcrumbs > ul > li > a.article').attr('href', article_id);
-		$('#breadcrumbs > ul > li > a.article').html( article_heading );
-	    }
-	    else {
-		var breadcrumb = '<li><a class="article" href="#'+article_id+'">' + article_heading + '</a></li>';
-		$('#breadcrumbs > ul').append( breadcrumb );
-	    }
-	}
-    }
-
-    /**
      * Determines appropriate article to display and transitions to it if
      * appropriate.
      * @param {string} direction Either 'next' or 'previous', the direction
@@ -256,12 +281,7 @@ function prepare_content_traversal() {
 	
 	if( $(destination).length ) {
 	    window.location.hash = $(destination).attr('id');
-	    $(article).hide();
-	    $(destination).show(); 
-	    set_content_nav_state();
-	    populate_article_breadcrumbs();
 	}
-	
     }
 }
 
@@ -304,8 +324,7 @@ function prepare_site_sub_nav( should_show_site_sub_nav ) {
     function columnize_site_sub_nav() {
 	$('#site_sub_nav').css({ 'display' : 'block' });
 	$('#site_sub_nav > ul > li > h1').addClass('dontend');
-	$('#site_sub_nav > ul > li > ul > li').addClass('dontend');
-    
+	$('#site_sub_nav > ul > li').addClass('dontsplit');
 	$('#site_sub_nav').children('ul').map( function(){
             $('#site_sub_nav').data('needsHeightSet', $(this));
 	    
@@ -423,24 +442,7 @@ function show_site_sub_nav( section ) {
     $('#page_header').bind('click.show_site_sub_nav', function(event) { event.stopPropagation(); });
 
     // Page header links outside the documentation menu should close the nav and go/propagate
-    //$('#page_header').find('a:not(#documentation_menu *)').bind('click.show_site_sub_nav', function() { hide_after_event( null, false, false ); });
-    $('#page_header').find('a:not(#documentation_menu *)').bind(
-	'click.show_site_sub_nav', { sect : content_section_via_url() },
-	function(event) { 
-
-	    var new_section = $.url( event.currentTarget ).segment(-1);
-	    //alert(new_section + ' ' + event.data.sect );
-	    
-	    if( event.data.sect == new_section ) {
-		//show_section_article( $.url( event.currentTarget ).fsegment().join('/') );
-		show_section_article(new_section, $.url( event.currentTarget ).fsegment().join('/') );
-		hide_after_event( null, false, false ); 
-	    }
-	    else {
-		hide_after_event( null, false, false );
-	    }
-	});
-    
+    $('#page_header').find('a:not(#documentation_menu *)').bind('click.show_site_sub_nav', function() { hide_after_event( null, false, false ); });
 
     // Links outside the page header should just close the nav
     $('body').find('a:not(#page_header *)').bind('click.show_site_sub_nav', function(event) { hide_after_event( event, true, true ); });
@@ -467,32 +469,5 @@ function show_site_sub_nav( section ) {
 	if( prevent_default )  { event.preventDefault(); }
 	if( stop_propagation ) { event.stopPropagation(); }
 	hide_site_sub_nav();
-    }
-}
-
-
-function show_section_article( article, hash ) {
-
-    // Explicitly show the article to be displayed and hide all others
-    $('#content > article#' + article).show('fast');
-    $('#content > article').not('#' + article).hide('fast');
-    scroll_to_article(hash);
-
-
-    /**
-     * Scrolls to top if the anchor tag only contains the base article. Prevents
-     * issue where anchor traversal happens before hiding other articles.
-     */
-    function scroll_to_article(hash) {
-	//alert(hash);
-	//$('html,body').animate({scrollTop: $(hash).offset().top},'slow');
-	
-	//if( $.url( window.location ).fsegment().length <= 1 ) {
-	//    $('html, body').animate( {scrollTop:0}, 0, 'easeOutQuart');
-	//}
-	//else {
-	    //alert('fseg');
-	 //   $('html,body').animate({scrollTop: $(hash).offset().top},'fast');
-	//}
     }
 }

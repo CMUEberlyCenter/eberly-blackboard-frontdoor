@@ -1,5 +1,10 @@
 <article id="enrollment">
 
+  <div class="article_sidebar">
+    <img src="images/manage/cp-users-and-groups.png"
+         alt="Control Panel - Users and Groups" />
+  </div>
+
   <h1>User Enrollment in a Blackboard Course</h1>
 
   <p>
@@ -19,32 +24,31 @@
     course.
   </p>
 
-  <p>
-    <em>Note:</em> Certain types of students commonly experience enrollment
+  <p class="eye_dagger">
+    <strong>Common Problem:</strong><br/>
+    Certain types of students commonly experience enrollment
     problems and therefore do not have access to course materials in
     Blackboard, <em>especially during the first two weeks of the semester</em>.
-  </p>
+    <br/><br/>
 
-  <p>
-    <em>Cross-Registered Students:</em> It can take up to two weeks for 
-    cross-registered students to receive their Andrew IDs. While your 
-    students await their Andrew IDs, you may want to allow guest access to 
-    your Blackboard course.
-  </p>
-  
-  <p>
-    <em>Students on the Wait List:</em> Wait-listed students do not initially
-    have access to the Blackboard course site. If you have important course
-    materials that students need to see before they become automatically
+    <strong>Cross-Registered Students:</strong> It can take up to two weeks
+    for cross-registered students to receive their Andrew IDs. While students
+    await their Andrew IDs, instructors may wish to
+    <a href="manage#guests">allow guest access</a> to their Blackboard course.
+    <br/><br/>
+
+    <strong>Students on the Wait List:</strong> Wait-listed students do not
+    initially have access to the Blackboard course site. If you have important
+    course materials that students need to see before they become automatically
     enrolled in the Blackboard course, you may want to manually enroll these 
     students.
   </p>
 
-  <h2 id="enrollment/manual">Manually Enroll a User</h2>
+  <h2 id="enrollment/manual">Enroll a TA / User</h2>
 
   <p>
-    Instructors and TAs have the ability to manually enroll a user in the 
-    course (such as a TA, waitlisted student, guest lecturer).
+    Instructors and TAs have the ability to <strong>manually</strong> enroll a
+    user in the course (such as a TA, waitlisted student, guest lecturer).
   </p>
   
   <p>
@@ -55,42 +59,108 @@
 
   <ol>
     <li>
-      From the &quot;Control Panel,&quot; expand the &quot;Users and
+      From the &quot;Control Panel&quot;, expand the &quot;Users and
       Groups&quot; menu, then click &quot;Users&quot;.
     </li>
     
     <li>
-      Click the &quot;Find Users to Enroll&quot; button (located at the top of
-      the &quot;Users&quot; page).
+      Click &quot;Enroll User&quot; &gt; &quot;Find Users to Enroll&quot;
+      (located at the top of the &quot;Users&quot; page).<br/>
+      <img src="images/manage/find-users-to-enroll.png"
+	   alt="Find Users to Enroll Screenshot"
+	   style="height: 182px; width: 550px;" />
     </li>
 
     <li>
-      You can either enter one or more &quot;Username(s)&quot; (separated by a
-      comma) in the text field provided, or click &quot;Browse...&quot; to
-      search for a user. When the search is complete a list of names will 
-      appear.<br/>
-      
-      <em>Be aware:</em> If the user you are trying to add is already enrolled
-      in the Blackboard course, his/her name will not appear in the search
-      return list.<br/>
-      
-      <em>Note:</em> When a student has become &quot;disabled&quot; in the
-      course, his/her name will not appear in either list. Contact Blackboard
-      Support for assistance when this occurs.
+      If the Andrew ID of the user is known, it can be supplied directly in the
+      &quot;Username&quot; text field. Otherwise, search for the user:
+      <ol>
+	<li>
+	  Click &quot;Browse...&quot; to bring up a search window.<br/>
+	  <img src="images/manage/search-users-browse.png"
+	       alt="Search Users - Browse Screenshot"
+	       style="height: 115px; width: 550px;" />
+	</li>
+	
+	<li>
+	  Select the appropriate field to search against:
+	  <ul>
+	    <li>
+	      Username: The user's Andrew ID<br/>
+	      (the text before the <strong>@andrew.cmu.edu</strong> in
+	      an official email address)<br/>
+	      <em>Note:</em> The text before an <strong>@cmu.edu</strong> email
+	      address is <strong>not</strong> guaranteed to be an andrew id.
+	    </li>
+
+	    <li>
+	      Last Name: The user's surname
+	    </li>
+
+	    <li>
+	      First Name: The user's given name
+	    </li>
+	    
+	    <li>
+	      Email: The user's email address. 
+	    </li>
+	  </ul>
+	  <img src="images/manage/search-field.png"
+	       alt="Select Search Field Screenshot"
+	       style="height: 115px; width: 550px;" />
+	</li>
+
+	<li>
+	  The search type &quot;Contains&quot; is the most liberal. Leave
+	  it as this unless too many results are returned to read through.
+	</li>
+
+	<li>
+	  Enter the known information about the user in text box.<br/>
+	  <img src="images/manage/search-users-text.png"
+	       alt="Search Text Screenshot"
+	       style="height: 70px; width: 550px;" />
+	</li>
+
+	<li>
+	  Click &quot;Go&quot; to retrieve the search results.<br/>
+	  <em>Note:</em> A user already enrolled in the course will not be
+	  returned in these search results.<br/>
+	  <em>Note:</em> When a student has become &quot;disabled&quot; in the
+	  course, his/her name will not appear in either list. Contact
+	  Blackboard Support for assistance when this occurs.
+
+	  <img src="images/manage/search-users-results.png"
+	       alt="Search Users Results Screenshot"
+	       style="height: 160px; width: 550px;" />
+	</li>
+	
+	<li>
+	  Select the checkbox next to each user that should be enrolled in the
+	  course.<br/>
+	  <img src="images/manage/search-users-results-checked.png"
+	       alt="Search Users Results Checked Screenshot"
+	       style="height: 160px; width: 550px;" />
+	</li>
+	
+	<li>
+	  Click &quot;Submit&quot; to return to the &quot;Enroll Users&quot;
+	  page with the results of the search. The username text field will
+	  be populated with the users returned from the search.
+	</li>
+      </ol>
+    </li>
+    
+    <li>
+      Select a role for the user from the &quot;Role&quot; dropdown menu
+      or leave the default (&quot;Student&quot;).<br/>
+      <img src="images/manage/enroll-users-student.png"
+	   alt="Enroll Users - Student Screenshot"
+	   style="height: 162px; width: 550px;" /><br/>
     </li>
 
     <li>
-      Select the checkbox next to the name(s) of the individual(s) you'd
-      like to enroll.
-    </li>
-
-    <li>
-      Select the role for the user or leave it at the default of 
-      &quot;Student.&quot;
-    </li>
-
-    <li>
-      Click &quot;Submit.&quot;
+      Click &quot;Submit&quot; to enroll the user.
     </li>
   </ol>
 
@@ -107,9 +177,11 @@
   <p>
     Expand the &quot;Users and Groups&quot; area in the &quot;Control
     Panel&quot; and click on &quot;Users&quot;. A list of users enrolled in 
-    the course will appear.
+    the course will appear.<br/>
+    <img src="images/manage/list-users.png"
+	 alt="List Users Screenshot" />
   </p>
-  
+
   <p>
     <em>Note:</em> If all users are not showing and you'd like to show all, 
     click the &quot;Show All&quot; button located beneath the list of users.
@@ -120,7 +192,14 @@
   <p>
     Enter an enrolled user's Last Name, User Name, or Email address in the 
     Search field and click the &quot;Search&quot; button. The user's 
-    information (name, username, email, role in Blackboard) will appear.
+    information (name, username, email, role in Blackboard) will appear.<br/>
+    <img src="images/manage/search-enrolled-users.png"
+       alt="List Users Screenshot"/>
+  </p>
+
+  <p class="eye_dagger">
+    <em>Note:</em> This search utility will only return results for users
+    already enrolled in the course.
   </p>
 
 </article>

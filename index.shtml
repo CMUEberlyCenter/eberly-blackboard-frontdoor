@@ -37,8 +37,8 @@
 	    <ul>
 	      <li><a href="manage#accounts">User accounts</a></li>
 	      <li><a href="manage#roles">Roles and affordances</a></li>
-	      <li><a href="manage#roles/change">Change a user's role</a></li>
 	      <li><a href="manage#enrollment">User Enrollment in a Blackboard Course</a></li>
+	      <li><a href="manage#enrollment/manual">Enroll a TA</a></li>
 	      <li><a href="manage#enrollment/list">List enrolled users</a></li>
 	      <li><a href="manage#guessts">Guest access</a></li>
 	    </ul>

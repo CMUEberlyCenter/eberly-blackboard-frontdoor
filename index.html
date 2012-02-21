@@ -1,134 +1,245 @@
 <!doctype html>
-
-<html lang="en">
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 
   <head>
     <meta charset="utf-8">
     <title>Blackboard Tabs Demo</title>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="js/libs/jquery.columnizer.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/libs/modernizr-2.0.6.min.js"></script>
+
+    <script>
+      $(function(){
+        $('#documentation_sub_nav h1').addClass("dontend");
+        $('.columns').columnize({ columns : 4 })
+      });
+    </script>
+  <script>
+    $(function() {
+      $('footer').addClass("fade");
+      $('#content').addClass("fade");
+    });
+  </script>
+
   </head>
 
   <body>
-
-    <div id="header">
-
-      <nav role="navigation">
+    
+    <header id="page_header">
+      
+      <section id="banner">
+	<a href="http://www.cmu.edu/blackboard">Blackboard</a>
+      </section>
+      
+      <nav id="contact_nav">
 	<ul>
-	  <li id="manage" class="active"><a href="#">manage users</a></li>
-	  <li id="build">                <a href="#">build a couse</a></li>
-	  <li id="communicate">          <a href="#">communicate &amp; collaborate</a></li>
-          <li id="evaluate">             <a href="#">evaluate students</a></li>
-	  <li id="getting-started">      <a href="#">getting started for Students</a></li>
+	  <li><a href="http://www.cmu.edu/ote">Office of Technology for Education</a></li>
+	  <li><a href="#">bb-help@andrew.cmu.edu</a></li>
+	  <li><a href="#">412-268-9090</a></li>
+	</ul>
+      </nav>
+      
+      <section id="site_search">
+	<form method="get" action="">
+	  <label for="search_text">Search for Support Topics</label>
+	  <input type="text" name="search_text" id="search_text">
+	  
+	  <input type="submit" value="Search">
+	</form>
+      </section>
+      
+      <nav id="site_nav" role="navigation">
+
+	<ul id="application_menu">
+	  <li class="login_button"><a href="#" tabindex="1">Login</a></li>
+	  <li class="request_course"><a href="#" class="indicates_more">Request a course</a></li>
+	</ul>
+
+	<ul id="documentation_menu">
+	  <li class="manage active">   <a href="#">manage users</a></li>
+	  <li class="build">           <a href="#">build a course</a></li>
+	  <li class="communicate">     <a href="#">communicate &amp; collaborate</a></li>
+          <li class="evaluate">        <a href="#">evaluate students</a></li>
+	  <li class="getting_started"> <a href="#">getting started for Students</a></li>
 	</ul>
       </nav>
 
-    </div>
+    </header>
+
+    <nav id="documentation_sub_nav">
+      <ul id="manage_sub_menu" class="columns">
+	<ul>
+	  <li><h1><a href="#">User accounts</a></h1></li>
+	  <li><a href="#">Andrew Accounts</a></li>
+	  <li><a href="#">Blackboard Sponsored Accounts</a></li>
+	</ul>
+
+	<ul>
+	  <li><h1><a href="#">Roles and affordances</a></h1></li>
+	  <li><a href="#">Changing a User's Role</a></li>
+	</ul>
+
+	<ul>
+	  <li><h1><a href="#">How users get enrolled</a></h1></li>
+	  <li><a href="#">Automatic Enrollment for Instructors and Enrolled Students</a></li>
+	  <li><a href="#">Manually Enrolling a User</a></li>
+	</ul>
+
+	<ul>
+	  <li><h1><a href="#">Seeing who is enrolled</a></h1></li>
+	  <li><a href="#">Listing All Users</a></li>
+	  <li><a href="#">Searching for Specific Users</a></li>
+	</ul>
+	
+	<ul>
+	  <li><h1><a href="#">Guest access</a></h1></li>
+	  <li><a href="#">Making Selected Areas of the Course Available to Guests</a></li>
+	  <li><a href="#">Turning on Guest Access at the Course Level</a></li>
+	</ul>
+
+      </ul>
+      
+      <!--
+      <ul id="build_sub_menu">
+      </ul>
+      -->
+
+    </nav>
 
 
-<h1>HTML Snippet</h1>
+    
+<section id="content">
+
+<h1>Header</h1>
 <pre>
-      &lt;nav role="navigation"&gt;
+    &lt;header id="page_header"&gt;
+
+      &lt;section id="banner"&gt;
+        &lt;a href="http://www.cmu.edu/blackboard"&gt;Blackboard&lt;/a&gt;
+      &lt;/section&gt;
+
+      &lt;nav id="contact_nav"&gt;
         &lt;ul&gt;
-          &lt;li id="manage" class="active"&gt;&lt;a href="#"&gt;manage users&lt;/a&gt;&lt;/li&gt;
-          &lt;li id="build"&gt;                &lt;a href="#"&gt;build a couse&lt;/a&gt;&lt;/li&gt;
-          &lt;li id="communicate"&gt;          &lt;a href="#"&gt;communicate &amp; collaborate&lt;/a&gt;&lt;/li&gt;
-          &lt;li id="evaluate"&gt;             &lt;a href="#"&gt;evaluate students&lt;/a&gt;&lt;/li&gt;
-          &lt;li id="getting-started"&gt;      &lt;a href="#"&gt;getting started for Students&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="http://www.cmu.edu/ote"&gt;Office of Technology for Education&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;bb-help@andrew.cmu.edu&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;412-268-9090&lt;/a&gt;&lt;/li&gt;
         &lt;/ul&gt;
-      &lt;/nav>
+      &lt;/nav&gt;
+
+      &lt;section id="site_search"&gt;
+        &lt;form method="get" action=""&gt;
+          &lt;label for="search_text"&gt;Search for Support Topics&lt;/label&gt;
+          &lt;input type="text" name="search_text" id="search_text"&gt;
+
+          &lt;input type="submit" value="Search"&gt;
+        &lt;/form&gt;
+      &lt;/section&gt;
+
+      &lt;nav id="site_nav" role="navigation"&gt;
+
+        &lt;ul id="application_menu"&gt;
+          &lt;li class="login_button"&gt;&lt;a href="#" tabindex="1"&gt;Login&lt;/a&gt;&lt;/li&gt;
+          &lt;li class="request_course"&gt;&lt;a href="#" class="indicates_more"&gt;Request a course&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;ul id="documentation_menu"&gt;
+          &lt;li class="manage active"&gt;   &lt;a href="#"&gt;manage users&lt;/a&gt;&lt;/li&gt;
+          &lt;li class="build"&gt;           &lt;a href="#"&gt;build a course&lt;/a&gt;&lt;/li&gt;
+          &lt;li class="communicate"&gt;     &lt;a href="#"&gt;communicate &amp; collaborate&lt;/a&gt;&lt;/li&gt;
+          &lt;li class="evaluate"&gt;        &lt;a href="#"&gt;evaluate students&lt;/a&gt;&lt;/li&gt;
+          &lt;li class="getting_started"&gt; &lt;a href="#"&gt;getting started for Students&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+
+    &lt;/header&gt;
 </pre>
 
-<h1>CSS Snippet</h1>
-    <pre>
-nav {
-    margin-top: 95px;
-    margin-left: 372px;
 
-    font-family: Open Sans, sans-serif;
-    color: #ffffff;
-    font-size: 14px;
-    line-height:
-    font-weight: 400;
-}
+<h1>Manage Users Menu</h1>
+<pre>
+    &lt;nav id="documentation_sub_nav"&gt;
+      &lt;ul id="manage_sub_menu" class="columns"&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;h1&gt;&lt;a href="#"&gt;User accounts&lt;/a&gt;&lt;/h1&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Andrew Accounts&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Blackboard Sponsored Accounts&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
 
-nav > ul {
-    list-style-type: none;
-}
+        &lt;ul&gt;
+          &lt;li&gt;&lt;h1&gt;&lt;a href="#"&gt;Roles and affordances&lt;/a&gt;&lt;/h1&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Changing a User's Role&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
 
-nav > ul a,
-nav > ul a:visited {
-    width: 105px;
-    padding: 5px 9px 3px 9px;
-    min-height: 42px;
-    position: relative;
-    text-decoration: none;
-    color: inherit;
-    display: block;
-}
+        &lt;ul&gt;
+          &lt;li&gt;&lt;h1&gt;&lt;a href="#"&gt;How users get enrolled&lt;/a&gt;&lt;/h1&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Automatic Enrollment for Instructors and Enrolled Students&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Manually Enrolling a User&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
 
-nav > ul > li {
-    float: left;
-    margin-left: 1px;
-    opacity:0.85;
-    filter:alpha(opacity=85); /* For IE8 and earlier */
+        &lt;ul&gt;
+          &lt;li&gt;&lt;h1&gt;&lt;a href="#"&gt;Seeing who is enrolled&lt;/a&gt;&lt;/h1&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Listing All Users&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Searching for Specific Users&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
 
-}
+        &lt;ul&gt;
+          &lt;li&gt;&lt;h1&gt;&lt;a href="#"&gt;Guest access&lt;/a&gt;&lt;/h1&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Making Selected Areas of the Course Available to Guests&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Turning on Guest Access at the Course Level&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
 
-nav > ul > li:first-child {
-    margin-left: 0px;
-}
-
-nav > ul > li.active {
-    opacity:1 !important;
-    filter:alpha(opacity=100) !important; /* For IE8 and earlier */
-}
-nav > ul > li:hover {
-    opacity:1 !important;
-    filter:alpha(opacity=100) !important; /* For IE8 and earlier */
-}
-
-nav > ul > li#manage a          { background-color: #A39D95; border-color: #A39D95; }
-nav > ul > li#build a           { background-color: #91BC1B; border-color: #91BC1B; }
-nav > ul > li#communicate a     { background-color: #7FB5BF; border-color: #7FB5BF; }
-nav > ul > li#evaluate a        { background-color: #EA7754; border-color: #EA7754; }
-nav > ul > li#getting-started a { background-color: #F78426; border-color: #F78426; }
-
-nav > ul > li.active > a:after {
-  content: "";
-  border-color: transparent transparent transparent transparent;
-  border-top: inherit;
-  border-style: solid;
-  border-width: 25px 25px 0px 0px;
-  width: 0;
-  height: 0;
-  position: absolute;
-  bottom: -25px;
-  left: 42px;
-}
-
+      &lt;/ul&gt;
+      ...
+   &lt;/nav&gt;
 </pre>
 
-<h1>CSS Triangles Demo</h1>
+
+<h1>Footer</h1>
 
 <pre>
-
-  <div class="triangle-demo">
-    <a class="triangle-demo bad">manage users</a>
-    <a class="triangle-demo good">manage users</a>
-  </div>
-
-
-
-
-
-
-
+    &lt;footer id="page_footer"&gt;
+      &lt;nav&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href="http://www.cmu.edu/ote"&gt;Office of Technology for Education&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;bb-help@andrew.cmu.edu&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;412-268-9090&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/nav&gt;
+    &lt;/footer&gt;
 </pre>
 
+
+</section>
+
+
+
+
+
+    <footer id="page_footer">
+      <nav>
+	<ul>
+	  <li><a href="http://www.cmu.edu/ote">Office of Technology for Education</a></li>
+	  <li><a href="#">bb-help@andrew.cmu.edu</a></li>
+	  <li><a href="#">412-268-9090</a></li>
+	</ul>
+      </nav>
+    </footer>
+      
+
+
+
+
+<!--
 
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+-->
   <script>
   $("nav li").click(
   function() {
@@ -138,6 +249,8 @@ nav > ul > li.active > a:after {
 
 
 </script>
+
+  
 
 
   </body>

@@ -79,8 +79,7 @@ function prepare_content() {
     prepare_site_sub_nav( should_show_site_sub_nav );
 
     // Add active class to course request link when on the page
-    var article = $.url( window.location ).segment(-1);
-    if( article == 'courserequest') { 
+    if( content_section_via_url() == 'courserequest') { 
 	$('ul#application_menu > li.request_course a').addClass('active');
     }
 
@@ -378,8 +377,15 @@ function prepare_site_sub_nav( should_show_site_sub_nav ) {
  * @param {string} section The documentation section to become active.
  */
 function show_documentation_section( section ) {
-    $('#documentation_menu > li > a[href=' + section + ']').addClass('active');
-    $('#documentation_menu > li > a:not([href=' + section + '])').removeClass('active');
+    if( section == 'courserequest') {
+	$('#documentation_menu > li > a').removeClass('active');
+	$('ul#application_menu > li.request_course a').addClass('active');
+    }
+    else {
+      $('#documentation_menu > li > a[href=' + section + ']').addClass('active');
+      $('#documentation_menu > li > a:not([href=' + section + '])').removeClass('active');
+      $('ul#application_menu > li.request_course a').removeClass('active');
+    }
 }
 
 

@@ -91,7 +91,7 @@ ul#application_menu > li.request_course { background: #d6d3cf; border: 1px solid
 ul#application_menu > li.request_course a,
 ul#application_menu > li.request_course a:visited { color: #ed1c24; font-size: 12px; font-weight: normal; text-align: center; vertical-align: middle; }
 ul#application_menu > li.request_course a:hover { font-weight: bold; }
-ul#application_menu > li.request_course a.active:after { border-color: transparent transparent transparent transparent; border-top: #d6d3cf; border-style: solid; border-width: 25px 25px 0 0; color: #d6d3cf; content: ""; height: 0; left: 42px; position: absolute; top: 32px; width: 0; }
+ul#application_menu > li.request_course a.active:after {  background-image: url('../images/elements/request-course-arrow.png'); content: ""; height: 24px; left: 42px; position: absolute; top: 32px; width: 25px; }
 
 
 ul#documentation_menu { background-color: #edebe9; display: none; float: right; font-size: 14px; font-weight: 400; line-height: 18px; margin-top: 0; }

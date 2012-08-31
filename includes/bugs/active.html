@@ -2,6 +2,8 @@
 
   <div class="article_sidebar">
     <ul class="link_bank">
+      <li><a href="../bugs#active_bugs/safari_reverse_proxy">A Shibboleth error occurs when
+	  logging into Blackboard on Safari</a></li>
       <li><a href="../bugs#active_bugs/intermittent_error_message">An unexpected error message
 	  appears intermittently when working in Blackboard</a></li>
       <li><a href="../bugs#active_bugs/lost_formatting">Formatting is lost and attempts to fix
@@ -17,6 +19,44 @@
     have a reasonable workaround, or are otherwise unresolved.
   </p>
   
+
+  <h2 id="active_bugs/safari_reverse_proxy">An error occurs when logging in
+    to Blackboard using Safari</h2>
+
+  <h3>Date Reported</h3>
+  
+  <p>
+    August 2012
+  </p>
+
+  <h3>Problem Description</h3>
+
+  <p>
+    An intermittent Shibboleth error message for an &quot;opensaml::BindingException&quot;
+    occurs when logging into Blackboard on Safari. Example screenshot:
+  </p>
+
+  <img src="../images/bugs/safari_reverse_proxy.png" alt="Safari Reverse Proxy Error Screenshot" />
+
+  <p>
+    See <a href="http://shibboleth.1660669.n2.nabble.com/Safari-5-1-5-Shibboleth-and-an-interesting-Reverse-Proxy-setup-td7428389.html"
+	   alt="Safari Reverse Proxy Error Report on Shibboleth Mailing List">this post to the Shibboleth
+      mailing list</a> for more details.
+  </p>
+  
+  <h3>Resolution Status</h3>
+  
+  <p>
+    This is a bug with Safari and how it handles reverse proxies. It is not resolved as of Safari 6.0.
+  </p>
+
+  <h3>Workaround</h3>
+
+  <p>
+    Use a different browser.
+  </p>
+
+
   <h2 id="active_bugs/intermittent_error_message">An unexpected error message appears
     intermittently when working in Blackboard</h2>
 
@@ -46,6 +86,7 @@
     Refresh your browser or quit and relaunch the browser.
   </p>
   
+
   <h2 id="active_bugs/lost_formatting">Formatting is lost and attempts to fix won't
     work</h2>
 

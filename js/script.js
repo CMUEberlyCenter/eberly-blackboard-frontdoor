@@ -33,7 +33,7 @@ function prepare_dashboard() {
 				   cssClass : 'rotating_tips', 
 				   effect : 'fade', 
 				   links : false, 
-				   speed : 8000 });
+				   speed : 13000 });
     $('.jshowoff-prev').html('<img src="images/elements/left-arrow.gif" alt="Previous Tip" />');
     $('.jshowoff-next').html('<img src="images/elements/right-arrow.gif" alt="Next Tip" />');
     

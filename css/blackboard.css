@@ -316,6 +316,7 @@ ul#documentation_menu > li > a.active:after { border-color: transparent transpar
 #content > article > .article_sidebar a { background: none; padding: 2px; }
 #content > article > .article_sidebar a:hover { border: none; }
 #content > article > .article_sidebar ul.link_bank { border-bottom: 1px solid #d6d3cf; border-top: 1px solid #d6d3cf; list-style-type: none; margin-top: 66px; padding: 5px 0; }
+#content > article > .article_sidebar ul.link_bank.up_top { margin-top: -30px; }
 #content > article > .article_sidebar > ul.link_bank > li { margin-bottom: 10px; }
 #content > article > .article_sidebar > ul.link_bank a { font-weight: bold; text-decoration: none; }
 #content > article > .article_sidebar > ul.link_bank + a { font-style: italic; margin-top: 0; }

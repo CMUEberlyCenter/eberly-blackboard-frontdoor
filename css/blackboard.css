@@ -173,13 +173,17 @@ ul#documentation_menu > li > a.active:after { border-color: transparent transpar
 
 /* ==|== home page content styles =========================================== */
 #announcements { background: #d8e7f3; border: 1px solid #88a5a1; clear: both; color: #333333; display: none; float: left; margin: 0 0 18px 0; padding: 0; width: 942px; }
-#announcements.alert { background: #fff18a; border-color: #f4d706; }
 #announcements > h1 { border-right: 1px solid #88a5a1; color: #231f20; float: left; font: 18px "Open Sans",sans-serif; line-height: 20px; min-height: 40px; margin: 5px 18px 5px 5px; padding: 12px 9px; width: 277px; }
-#announcements.alert > h1 { color: #ed1c24; border-color: #f4d706; }
 #announcements > p { border-left: 1px solid #88a5a1; font-size: 14px; margin: 5px 0 5px 300px; min-height: 20px; padding: 12px 55px 15px 20px; }
-#announcements.alert p { border-color: #f4d706; }
 #announcements > p a { color: #231f20; }
 #announcements > p a:hover { color: #333333; }
+
+#announcements.alert { background: #fff18a; border-color: #f4d706; }
+#announcements.alert > h1 { color: #ed1c24; border-color: #f4d706; }
+#announcements.alert p { border-color: #f4d706; }
+#announcements.emergency { background: #fac87d; border-color: #f45c06; }
+#announcements.emergency > h1 { color: #ed1c24; border-color: #f45c06; }
+#announcements.emergency p { border-color: #f45c06; }
 
 #dashboard { clear: both; }
 #dashboard a { display: block; text-decoration: none; }

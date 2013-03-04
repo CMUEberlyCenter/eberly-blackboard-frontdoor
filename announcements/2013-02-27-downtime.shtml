@@ -1,0 +1,135 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+  <head>
+    <meta charset="utf-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> -->
+
+    <title>Announcements - Carnegie Mellon Blackboard</title>
+    <meta name="description" content="The Carnegie Mellon Blackboard documentation site">
+    <meta name="author" content="Carnegie Mellon University">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!--#include virtual="../includes/style.html" -->
+    <!--#include virtual="../includes/javascript_head.html" -->
+  </head>
+
+  <body>
+    
+    <!--#include virtual="../includes/header.html" --> 
+
+    
+    <section id="breadcrumbs" role="navigation">
+      <ul>
+        <li><a href="http://www.cmu.edu/blackboard">Home</a></li>
+        <li><a href="../announcements/last.shtml">Announcements</a></li>
+      </ul>
+    </section>
+
+    <section id="content" role="main" class="announcements">
+
+      <h1>Dear Blackboard Community,</h1>
+
+      <p>
+	We apologize for the recent series of Blackboard outages and
+        for any disruption to your academic work this may have
+        caused. The reliability of the Blackboard system and related
+        services is of utmost importance to us. Unfortunately,
+        problems with the back-end systems have brought down
+        Blackboard services much too frequently of late. OTE's
+        Blackboard Support Team and Computing Services technical
+        infrastructure teams are working together toward a
+        solution. We would like to inform you about what's been
+        happening and how we are working to remedy the situation.
+      </p>
+       
+      <h2>Technical description of the problem:</h2> 
+      <p>
+	Computing Services uses Storage Area Network (SAN) technology
+       to support shared disk environments for virtual and physical
+       hosts at CMU. Our hosted instance of Blackboard uses this
+       storage system. Recently, there have been disk failures
+       on the SAN volumes. When these failures occur, the Blackboard
+       connections to the SAN volumes also fail, causing your actions
+       in Blackboard to hang and, ultimately, the front-end service to
+       drop altogether. These recent Blackboard outages are all
+       related to this particular system failure.
+      </p>
+      
+      <p>
+        NOTE: When a problem occurs, some of you will send us email
+        reports describing the problems you've encountered and the
+        errors you received while trying to access Blackboard. We
+        appreciate this! Your reports help us to troubleshoot the
+        problems. In addition, we have monitoring services in place to
+        let us know when Blackboard is failing.
+      </p>
+
+      <h2>Short-term actions to address the problem:</h2>
+      <p>
+        As soon as an alert is raised, the team immediately begins to
+        work on the back-end systems to restore services as quickly as
+        possible. However, there is time-intensive work that goes on
+        behind the scenes to restore the SAN volume connections to
+        Blackboard and thus, to bring it back online for your use.
+      </p>
+      
+      <p>
+        NOTE: Until the underlying problem is resolved, here are some
+        short-term suggestions.<br>
+        <strong>Students:</strong> We encourage you to conduct your
+        Blackboard-related work as much in advance as possible and not
+        to rely on Blackboard access at the last minute.<br>
+        <strong>Instructors:</strong> Offering some flexibility on
+        student deadlines when there has been an unexpected Blackboard
+        outage may be worth considering. You can find a record of this
+        semester's downtimes
+        at <a href="http://www.cmu.edu/blackboard/downtime/">http://www.cmu.edu/blackboard/downtime/</a>.
+      </p>
+      
+      <h2>Actions being taken to resolve the underlying problem:</h2>
+      <p>
+        We are working to address the underlying problem and restore
+        Blackboard to our high standard of system reliability. To
+        accomplish this, Computing Services has acquired new SAN
+        technology software and hardware. They have installed the new
+        SAN volumes and are working through a series of tests on this
+        new SAN infrastructure. Once testing is complete, we will
+        schedule a Blackboard downtime maintenance window to
+        transition/connect Blackboard to the new SAN technology.
+      </p>
+
+      <p>
+        We will schedule this changeover to minimize impact on
+        Blackboard users and will communicate it to you very soon to
+        provide advanced notice. Again, we appreciate hearing from you
+        when these difficulties arise and we appreciate your patience as
+        we work to make the service more reliable.
+      </p>
+      
+      <p>
+	Thank You!<br/>
+        Your Blackboard Support Teams<br/>
+        Office of Technology for Education &amp; Computing Services<br/>
+        <a href="http://www.cmu.edu/blackboard/">http://www.cmu.edu/blackboard/</a><br/>
+        <a href="http://www.cmu.edu/computing/">http://www.cmu.edu/computing/</a>
+      </p>
+
+      <p>
+	Blackboard Support Contact:<br/>
+        <a href="mailto:bb-help@andrew.cmu.edu">bb-help@andrew.cmu.edu</a><br/>
+        412-268-9090
+      </p>
+
+    </section>
+
+    <!--#include virtual="../includes/footer.html" --> 
+    
+    <!--#include virtual="../includes/javascript_bottom.html" -->
+  </body>
+  
+</html>

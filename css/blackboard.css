@@ -348,6 +348,10 @@ ul#documentation_menu > li > a.active:after { border-color: transparent transpar
 #content.policies #overview h2 > a { text-decoration: none; }
 #content.policies #overview a { background: none; color: inherit; }
 
+#content.announcements h1,
+#content.announcements h2 { color: #c81729; font: 18px Georgia,serif; margin: 0 0 10px 0; padding: 0; }
+
+
 /* ==|== inner page content navigation styles =============================== */
 #content_nav { clear: both; color: #ffffff; font: bold 10px Arial,sans-serif; margin-bottom: 18px; text-align: center; width: 100%; }
 

@@ -179,6 +179,7 @@ ul#documentation_menu > li > a.active:after { border-color: transparent transpar
 #announcements > p a:hover { color: #333333; }
 
 #announcements.alert { background: #fff18a; border-color: #f4d706; }
+#announcements.alert.big { background: #fff4b3; border-color: #f4d706; }
 #announcements.alert > h1 { color: #ed1c24; border-color: #f4d706; }
 #announcements.alert p { border-color: #f4d706; }
 #announcements.emergency { background: #fac87d; border-color: #f45c06; }

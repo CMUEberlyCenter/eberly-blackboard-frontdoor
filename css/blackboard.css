@@ -340,12 +340,6 @@ ul#documentation_menu > li > a.active:after { border-color: transparent transpar
 #content > article table > tbody > tr:nth-child(even) { background-color: #edebe9; }
 #content > article table > tbody > tr > td { padding: 5px 10px; }
 
-#content.whatsnew #overview\/contents ul { list-style-type: none; }
-#content.whatsnew #overview\/contents ul > li { padding-bottom: 0px; }
-#content.whatsnew #overview\/contents ul > li:first-child { margin-bottom: 7px; }
-#content.whatsnew #overview\/contents ul > li a { font: 14px Georgia,serif; margin-left: -2px ; text-decoration: none; }
-#content.whatsnew #overview\/contents ul > li a.indicates_more:after { content: " >>"; }
-
 #content.policies #overview h2 > a { text-decoration: none; }
 #content.policies #overview a { background: none; color: inherit; }
 

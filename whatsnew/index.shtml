@@ -30,22 +30,10 @@
       </ul>
     </section>
 
-    <section id="content" role="main" class="whatsnew">
+    <section id="content" role="main" class="no_content_traversal">
       <h1>What's New in Blackboard 9.1</h1>
       
       <!--#include virtual="../includes/whatsnew/overview.html" -->
-
-      <!--#include virtual="../includes/whatsnew/interface.html" -->
-
-      <!--#include virtual="../includes/whatsnew/contenttypes.html" -->
-
-      <!--#include virtual="../includes/whatsnew/gradecenter.html" -->
-
-      <!--#include virtual="../includes/whatsnew/tools.html" -->
-
-      <!--#include virtual="../includes/whatsnew/groups.html" -->
-
-      <!--#include virtual="../includes/whatsnew/changes.html" -->
     </section>
 
     <!--#include virtual="../includes/footer.html" --> 

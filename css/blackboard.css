@@ -173,8 +173,11 @@ ul#documentation_menu > li > a.active:after { border-color: transparent transpar
 
 /* ==|== home page content styles =========================================== */
 #announcements { background: #d8e7f3; border: 1px solid #88a5a1; clear: both; color: #333333; display: none; float: left; margin: 0 0 18px 0; padding: 0; width: 942px; }
-#announcements > h1 { border-right: 1px solid #88a5a1; color: #231f20; float: left; font: 18px "Open Sans",sans-serif; line-height: 20px; min-height: 40px; margin: 5px 18px 5px 5px; padding: 12px 9px; width: 277px; }
-#announcements > p { border-left: 1px solid #88a5a1; font-size: 14px; margin: 5px 0 5px 300px; min-height: 20px; padding: 12px 55px 15px 20px; }
+#announcements > * { border-left: 1px solid #88a5a1; font-size: 14px; margin: 0 0 0 300px; min-height: 20px; padding: 0 55px 0 20px; }
+#announcements > :nth-child(2) { margin-top: 5px; padding-top: 12px; }
+#announcements > :last-child{ margin-bottom: 5px; padding-bottom: 12px; }
+#announcements > h1 { border-left: none; border-right: 1px solid #88a5a1; color: #231f20; float: left; font: 18px "Open Sans",sans-serif; line-height: 20px; min-height: 40px; margin: 5px 18px 5px 5px; padding: 12px 9px; width: 277px; }
+#announcements > ol { padding-left: 40px; }
 #announcements > p a { color: #231f20; }
 #announcements > p a:hover { color: #333333; }
 

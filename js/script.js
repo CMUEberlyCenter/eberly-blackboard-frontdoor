@@ -58,6 +58,12 @@ function prepare_content() {
 
     // Determine if site_sub_nav flagged for show now; URL subject to change
     var should_show_site_sub_nav = window.location.hash == '#site_sub_nav/show' ? true : false;
+
+    // Normal section indeces should display the site sub nav regardless of flag
+    if(( $.url( window.location ).fsegment().length == 1 )
+       && ( content_section_via_url() != "courserequest" )) {
+	should_show_site_sub_nav = true
+    }
     
     prepare_documentation_menu();
     columnize_internal_content();

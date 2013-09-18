@@ -61,7 +61,12 @@ function prepare_content() {
 
     // Normal section indeces should display the site sub nav regardless of flag
     if(( $.url( window.location ).fsegment().length == 1 )
-       && ( content_section_via_url() != "courserequest" )) {
+       && (( content_section_via_url() == "manage" ) ||
+	   ( content_section_via_url() == "build"  ) ||
+	   ( content_section_via_url() == "communicate"  ) ||
+	   ( content_section_via_url() == "evaluate"  ) ||
+	   ( content_section_via_url() == "gettingstarted"  ))
+      ) {
 	should_show_site_sub_nav = true
     }
     

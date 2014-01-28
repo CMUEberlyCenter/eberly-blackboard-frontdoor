@@ -188,6 +188,9 @@ ul#documentation_menu > li > a.active:after { border-color: transparent transpar
 #announcements.emergency { background: #fac87d; border-color: #f45c06; }
 #announcements.emergency > h1 { color: #ed1c24; border-color: #f45c06; }
 #announcements.emergency p { border-color: #f45c06; }
+#announcements.special-workshop { background: #faaf40; border-color: #f89f3e; }
+#announcements.special-workshop > h1 { border-color: #f89f3e; }
+#announcements.special-workshop p { border-color: #f89f3e; }
 
 #dashboard { clear: both; }
 #dashboard a { display: block; text-decoration: none; }

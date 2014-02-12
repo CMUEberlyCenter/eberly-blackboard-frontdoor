@@ -2,6 +2,9 @@
 
   <div class="article_sidebar">
     <ul class="link_bank">
+      <li><a href="../bugs#active_bugs/java_sucks">Blackboard
+	  Components Display "Error. Click for
+	  details" message</a></li>
       <li><a href="../bugs#active_bugs/my_grades">Students Can't Use My Grades</a></li>
       <li><a href="../bugs#active_bugs/copy_pasta">Copy and Paste Functionality
 	  Does Not Work Properly</a></li>
@@ -25,13 +28,62 @@
   </p>
 
 
+  <h2 id="active_bugs/java_sucks">Blackboard Components Display
+          "Error. Click for details" message</h2>
+
+  <h3>Date Reported</h3>
+  
+  <p>
+    January 2014
+  </p>
+
+  <h3>Problem Description</h3>
+
+  <p>
+    Some Blackboard content modules, including Chat, the Formula Editor,
+    and Virtual Classroom, are replaced with a "Error. Click for details"
+    box. This will happen on systems running Java 7u51.
+    <img src="../images/bugs/java-error.png" alt="Java Error Screenshot" />
+  </p>
+  
+  <h3>Resolution Status</h3>
+  
+  <p>
+    There is a patch under review for the Blackboard server, but in
+    the meantime, a client-side workaround exists.
+  </p>
+
+  <h3>Workaround</h3>
+
+  <ol>
+    <li>
+      Go to the Java Control Panel under System Preferences (OSX) or
+      Control Panel (Windows)
+    </li>
+    <li>
+      Go to the Security tab and click "Edit Site List..."
+      <img src="../images/bugs/java-control-panel.png" alt="Java Control Panel Screenshot" />
+    </li>
+    <li>
+      Click "Add" and then enter "https://blackboard.andrew.cmu.edu" in the text box
+      <img src="../images/bugs/java-exception.png" alt="Java Control Panel Screenshot" />
+    </li>
+    <li>
+      Click "OK" to leave the "Exception Site List" window, and click "OK" to close the
+      Java Control Panel
+    </li>
+    <li>
+      Reload the Blackboard page with the error message on it
+    </li>
+  </ol>
+
   <h2 id="active_bugs/my_grades">Students Can't Use My Grades</h2>
 
   <h3>Date Reported</h3>
   
   <p>
     September 2013
-  </p>
+ </p>
 
   <h3>Problem Description</h3>
 

@@ -176,7 +176,18 @@ ul#documentation_menu > li > a.active:after { border-color: transparent transpar
 #announcements > * { border-left: 1px solid #88a5a1; font-size: 14px; margin: 0 0 0 300px; min-height: 20px; padding: 0 55px 0 20px; }
 #announcements > :nth-child(2) { margin-top: 5px; padding-top: 12px; }
 #announcements > :last-child{ margin-bottom: 5px; padding-bottom: 12px; }
-#announcements > h1,h2,h3,h4,h5,h6 { color: #231f20; font-family: "Open Sans",sans-serif; font-weight: normal; padding-bottom: 12px; }
+#announcements > h1,
+#announcements > h2,
+#announcements > h3,
+#announcements > h4,
+#announcements > h5,
+#announcements > h6 { color: #231f20; font-family: "Open Sans",sans-serif; font-weight: normal; padding-bottom: 12px; }
+#announcements > p + h1,
+#announcements > p + h2,
+#announcements > p + h3,
+#announcements > p + h4,
+#announcements > p + h5,
+#announcements > p + h6 { padding-top: 20px; }
 #announcements > h1 { border-left: none; border-right: 1px solid #88a5a1; float: left; font-size: 18px; line-height: 20px; min-height: 40px; margin: 5px 18px 5px 5px; padding: 12px 9px; width: 277px; }
 #announcements > ol { padding-left: 40px; }
 #announcements > p { padding-bottom: 10px; }
@@ -186,11 +197,21 @@ ul#documentation_menu > li > a.active:after { border-color: transparent transpar
 #announcements.alert > * { border-color: #f4d706; }
 #announcements.alert { background: #fff18a; border-color: #f4d706; }
 #announcements.alert.big { background: #fff4b3; border-color: #f4d706; }
-#announcements.alert > h1,h2,h3,h4,h5,h6 { color: #ed1c24; }
+#announcements.alert > h1,
+#announcements.alert > h2,
+#announcements.alert > h3,
+#announcements.alert > h4,
+#announcements.alert > h5,
+#announcements.alert > h6 { color: #ed1c24; }
 #announcements.alert p { border-color: #f4d706; }
 #announcements.emergency { background: #fac87d; border-color: #f45c06; }
 #announcements.emergency > * { border-color: #f45c06; }
-#announcements.emergency > h1,h2,h3,h4,h5,h6 { color: #ed1c24; }
+#announcements.emergency > h1,
+#announcements.emergency > h2,
+#announcements.emergency > h3,
+#announcements.emergency > h4,
+#announcements.emergency > h5,
+#announcements.emergency > h6 { color: #ed1c24; }
 #announcements.emergency p { border-color: #f45c06; }
 #announcements.special-workshop { background: #faaf40; border-color: #f89f3e; }
 #announcements.special-workshop > h1 { border-color: #f89f3e; }

@@ -13,7 +13,7 @@
     <meta name="author" content="Carnegie Mellon University">
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
-
+    <meta http-equiv="refresh" content="0; url=https://goo.gl/forms/7tqLb85dOrcB5xo32" />
     <!--#include virtual="../includes/style.html" -->
     <!--#include virtual="../includes/javascript_head.html" -->
   </head>
@@ -34,7 +34,7 @@
       <h1>Course Request</h1>
       
 
-      <iframe src="http://support.ote.cmu.edu/bb/bb9courserequest.php" width="800px" height="1520px" scrolling="auto" frameborder="0" ></iframe>
+      <iframe src="//goo.gl/forms/7tqLb85dOrcB5xo32" width="800px" height="2480px" scrolling="auto" frameborder="0" ></iframe>
     </section>
 
     <!--#include virtual="../includes/footer.html" --> 

@@ -29,6 +29,7 @@ function prepare_dashboard() {
     columnize_additional_support_topics();
 
     // Make the rotating tips cycle through
+    /* RIP Blackboard
     $('#rotating_tips').jshowoff({ changeSpeed : 400, 
 				   cssClass : 'rotating_tips', 
 				   effect : 'fade', 
@@ -36,6 +37,7 @@ function prepare_dashboard() {
 				   speed : 13000 });
     $('.jshowoff-prev').html('<img src="images/elements/left-arrow.gif" alt="Previous Tip" />');
     $('.jshowoff-next').html('<img src="images/elements/right-arrow.gif" alt="Next Tip" />');
+    */
     
     $('#announcements').slideDown('slow'); // Show announcements in dashboard
 
